@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selectors Example</title>
+
+<style>
+
+/* 1️⃣ Universal Selector */
+*{
+    font-family: Arial;
+}
+
+/* 2️⃣ Element Selector */
+h1{
+    color: red;
+}
+
+/* 3️⃣ ID Selector */
+#mainHeading{
+    background-color: lightyellow;
+}
+
+/* 4️⃣ Class Selector */
+.text{
+    color: blue;
+}
+
+/* 5️⃣ Grouping Selector */
+h2, h3{
+    color: green;
+}
+
+/* 6️⃣ Attribute Selector */
+input[type="text"]{
+    border:2px solid orange;
+}
+
+/* 7️⃣ Descendant Selector */
+div p{
+    background-color: lightgray;
+}
+
+/* 8️⃣ Pseudo Class Selector */
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Element + ID Selector -->
+<h1 id="mainHeading">CSS Selectors Example</h1>
+
+<!-- Class Selector -->
+<p class="text">This paragraph uses a class selector.</p>
+
+<!-- Grouping Selector -->
+<h2>Heading Two</h2>
+<h3>Heading Three</h3>
+
+<!-- Descendant Selector -->
+<div>
+    <p>This paragraph is inside div (descendant selector).</p>
+</div>
+
+<!-- Attribute Selector -->
+<input type="text" placeholder="Enter name">
+
+<br><br>
+
+<!-- Pseudo Class Selector -->
+<button>Hover Me</button>
+
+</body>
+</html>
