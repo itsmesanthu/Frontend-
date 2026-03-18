@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-image: url("image.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family:Arial;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .login-box{
+            width:300px;
+            backdrop-filter: blur;
+            text-align:center;
+            border: none;
+            border-radius:10px;
+            box-shadow:0 40px 100px rgba(2, 2, 2, 0.2);
+            padding:20px;
+        }
+
+        .login-box h2{
+            margin-bottom: 20px;
+        }
+
+        .input-box{
+            border: 2px solid blue;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-box label{
+            font-size: 14px;
+        }
+
+        .input-box input{
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button{
+            width: 100%;
+            padding: 10px;
+            background: #2575fc;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #1a5edb;
+        }
+
+        .extra{
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .extra a{
+            text-decoration: none;
+            color: #2575fc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form>
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username">
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password">
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="extra">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
