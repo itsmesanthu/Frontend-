@@ -1,0 +1,180 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ramanna Hotel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #144ae0;
+            color: white;
+            padding: 15px 40px;
+        }
+
+        header img{
+            height: 50px;
+            border: 5px solid black;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: orange;
+        }
+        .hero{
+            height: 400px;
+            background: url("heroimg.jpg") no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 50px black;
+        }
+        .about{
+            padding: 40px;
+            text-align: center;
+            background: #f4f4f4;
+        }
+        .services{
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card{
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img{
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3{
+            margin: 15px 0;
+        }
+
+        .card p{
+            padding: 0 15px 15px;
+        }
+
+        .card button{
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .card button:hover{
+            background: orange;
+        }
+        footer{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        } .count{
+            align-items: center;
+            color: blued;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <img src="phoenix-logo.png" alt="Hotel Logo">
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#room">Rooms</a>
+        <a href="#dining">Dining</a>
+        <a href="#pool">Pool</a>
+        <a href="#cont">Contact</a>
+    </nav>
+</header>
+<section class="hero">
+    Welcome to Ramanna Hotel
+</section>
+<section class="about">
+    <h2>About Our Hotel</h2>
+    <p>
+        Ramanna Hotel offers luxury rooms, delicious food, and relaxing pool facilities.
+        Enjoy your stay with comfort and world-class service.
+    </p>
+</section>
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="card-container">
+
+        <div id="room"class="card">
+            <img src="rooms.jpg" alt="Rooms">
+            <h3>Luxury Rooms</h3>
+            <p>Comfortable and modern rooms for a relaxing stay.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div id="dining" class="card">
+            <img src="dining.jpg" alt="Dining">
+            <h3>Dining</h3>
+            <p>Enjoy delicious meals prepared by expert chefs.</p>
+            <button>Learn More</button>
+        </div>
+
+        <div  id="pool"class="card">
+            <img src="pool.jpg" alt="Pool">
+            <h3>Swimming Pool</h3>
+            <p>Relax and refresh in our beautiful swimming pool.</p>
+            <button>Learn More</button>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div id="cont" class="contact">
+    <h4> contact</h4>
+    <p>phone number:8147422441 place: bengaluru</p>
+    </div>
+
+    <p>© 2026 Phoenix Hotel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+```
