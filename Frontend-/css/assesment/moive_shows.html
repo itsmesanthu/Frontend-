@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Movie Showcase</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#e6e6e6;
+}
+
+
+
+.header{
+    background:#3b3f45;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:32px;
+    font-weight:bold;
+}
+
+
+
+.section-title{
+    text-align:center;
+    margin-top:30px;
+    font-size:28px;
+    font-weight:bold;
+    color:#333;
+}
+
+
+.movie-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+
+.movie-card{
+    background:white;
+    width:250px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    text-align:center;
+}
+
+
+
+.movie-card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+
+.movie-content{
+    padding:15px;
+}
+
+.movie-title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.movie-info{
+    font-size:14px;
+    color:#555;
+    margin:5px 0;
+}
+
+
+.btn{
+    margin-top:10px;
+    background:#28a745;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.btn:hover{
+    background:#218838;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    Movie Showcase
+</div>
+
+<div class="section-title">
+    Featured Movies
+</div>
+
+
+<div class="movie-container">
+
+
+    <div class="movie-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Uncharted_4_box_artwork.jpg">
+        <div class="movie-content">
+
+            <div class="movie-title">
+                Uncharted
+            </div>
+
+            <div class="movie-info">
+                Release Date: 2025
+            </div>
+
+            <div class="movie-info">
+                Genre: Action, Adventure
+            </div>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+    </div>
+
+    <div class="movie-card">
+            <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5e0b56689825f5.03106670.jpg?lastEdited=1577801333&w=600&h=600&f=webp" alt="">
+        <div class="movie-content">
+
+            <div class="movie-title">
+                The Order
+            </div>
+
+            <div class="movie-info">
+                Release Date: 2025
+            </div>
+
+            <div class="movie-info">
+                Genre: Drama, Thriller
+            </div>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+    </div>
+
+    <div class="movie-card">
+       
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Chillarparty2.jpg/250px-Chillarparty2.jpg" alt="">
+
+        <div class="movie-content">
+
+            <div class="movie-title">
+                Chiller Party
+            </div>
+
+            <div class="movie-info">
+                Release Date: 2025
+            </div>
+
+            <div class="movie-info">
+                Genre: Comedy, Family
+            </div>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+    </div>
+
+    <div class="movie-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/IF_%28film%29_poster_2.jpg/250px-IF_%28film%29_poster_2.jpg" alt="">
+        <div class="movie-content">
+
+            <div class="movie-title">
+                IF
+            </div>
+
+            <div class="movie-info">
+                Release Date: 2025
+            </div>
+
+            <div class="movie-info">
+                Genre: Comedy
+            </div>
+
+            <button class="btn">
+                View More
+            </button>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
