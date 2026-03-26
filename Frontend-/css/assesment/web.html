@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background: #ff6f6f;
+    padding: 15px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: bold;
+}
+
+.menu {
+    font-size: 22px;
+}
+.section1 {
+    display: flex;
+    height: 90vh;
+}
+
+.left {
+    width: 50%;
+    background: linear-gradient(to right, #fff2b2, #ffd6d6);
+    padding: 80px;
+}
+
+.left h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 12px 30px;
+    background: #ff6f6f;
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+
+.right {
+    width: 50%;
+}
+
+.right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px;
+    background: linear-gradient(to right, #fff2b2, #d48acb);
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.small-images img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.big-image img {
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+}
+.text-box {
+    background: #ff6f6f;
+    padding: 40px;
+    width: 350px;
+}
+
+.text-box h2 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.text-box a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.hi{
+   position: relative;
+        left: 3px;
+        top: 5px;
+        
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Order</li>
+            <li>Food</li>
+            <li>Restaurant</li>
+            <li>Testimonials</li>
+            <li>Contact Us</li>
+            <li class="menu"> <img src="menu-bar.png" alt="" height="20px" width="20px"></li>
+        </ul>
+    </nav>
+</header>
+<section class="section1">
+
+    <div class="left">
+        <h1>LOREM IPSUM</h1>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Vivamus id est vitae dolor rhoncus tristique.
+            Maecenas metus quam, rhoncus euismod lorem in,
+            sollicitudin viverra eros.
+        </p>
+
+        <button>Click Me</button>
+    </div>
+
+    <div class="right">
+        <img src="pexels-robin-stickel-70497.jpg" alt="Burger">
+    </div>
+
+</section>
+<section class="section2">
+
+    <div class="images">
+
+        <div class="small-images">
+            <img src="pexels-rachel-claire-6752433.jpg">
+            <img src="pexels-eva-bronzini-6141651.jpg">
+        </div>
+
+        <div class="big-image">
+            <img src="pexels-mister-mister-3434523.jpg">
+        </div>
+
+    </div>
+
+    <div class="text-box">
+
+        <p>LOREM IPSUM</p>
+
+        <h2>
+            LOREM IPSUM  
+            SET ADEMIR
+        </h2>
+
+        <a href="#">Click</a> <img src="icons8-arrow-30.png" alt="" height="20px" width="20px"  class="hi">
+
+    </div>
+
+</section>
+
+</body>
+</html>

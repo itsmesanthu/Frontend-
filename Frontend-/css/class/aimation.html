@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box1{
+            height:200px;
+            width: 200px;
+            background-color: blue;
+            margin:50px auto; */
+            /* animation-name: myanimation1;
+            animation-duration: 9s; */
+            /* animation: myanimation1 5s infinite;
+        } */
+        /* @keyframes myanimation {
+             from{background-color: red;}
+             to{background-color: yellow;}
+        }
+         @keyframes myanimation1 {
+             0%{background-color: red;border-radius: 10px;transform: rotate(90deg);}
+             25%{background-color: yellow;border-radius: 10px;transform: rotate(180deg);}
+             50%{background-color: pink;border-radius: 10px;transform: rotate(200deg);}
+             75%{background-color: pink;border-radius: 10px;transform: rotate(250deg);}
+                  100%{background-color:olivedrab;border-radius: 10px;transform: rotate(360deg);}
+        } */
+         .box1{
+            height: 100px;
+            width: 100px;
+            background-color: plum;
+            position: relative;
+            animation: rotateanimation 6s infinite;
+            border-radius: 50%;
+                   /* animation-direction: alternate-reverse; */
+         }
+          .box2{
+            height: 100px;
+            width: 100px;
+            background-color: plum;
+            position: relative;
+            animation: rotateanimation 6s infinite;
+            border-radius: 50%;
+            margin: 10px;
+            animation-direction: reverse;
+         }
+         @keyframes rotateanimation {
+            0%{background-color: aqua;top:0px;left:0px;}
+               25%{background-color: burlywood;top:0px;left:900px;}
+                  50%{background-color: rgb(208, 17, 214);top:500px;left:900px;}
+                     75%{background-color: rgb(217, 101, 12);top:500px;left:0px;}
+                       100%{background-color: rgb(17, 214, 17);top:0px;left:0px;}
+         }
+    </style>
+</head>
+<body>
+        <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>
