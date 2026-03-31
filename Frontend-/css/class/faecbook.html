@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook – Log in or sign up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --blue: #1877f2;
+      --blue-hover: #166fe5;
+      --green: #42b72a;
+      --green-hover: #36a420;
+      --border: #dddfe2;
+      --text-primary: #1c1e21;
+      --text-secondary: #606770;
+      --bg: #f0f2f5;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      width: 100%;
+      max-width: 980px;
+    }
+
+    /* LEFT: Branding */
+    .branding {
+      flex: 1;
+      max-width: 440px;
+      padding-bottom: 60px;
+    }
+
+    .branding .logo {
+      color: var(--blue);
+      font-size: 56px;
+      font-weight: 700;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .branding p {
+      font-size: 26px;
+      line-height: 1.35;
+      color: var(--text-primary);
+      font-weight: 400;
+    }
+
+    /* RIGHT: Login card */
+    .login-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,.1), 0 8px 16px rgba(0,0,0,.1);
+      padding: 16px;
+      width: 100%;
+      max-width: 396px;
+    }
+
+    .login-card input[type="text"],
+    .login-card input[type="password"],
+    .login-card input[type="email"] {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 17px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .login-card input:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 2px rgba(24,119,242,0.2);
+    }
+
+    .btn-login {
+      width: 100%;
+      padding: 14px;
+      font-size: 20px;
+      font-weight: 700;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .btn-login:hover {
+      background: var(--blue-hover);
+    }
+
+    .forgot-link {
+      display: block;
+      text-align: center;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 16px 0;
+    }
+
+    .btn-create {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 14px 24px;
+      font-size: 17px;
+      font-weight: 600;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .btn-create:hover {
+      background: var(--green-hover);
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+      max-width: 980px;
+      width: 100%;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      margin: 0 4px;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    footer .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    /* Responsive: stack on small screens */
+    @media (max-width: 768px) {
+      .container { flex-direction: column; gap: 16px; }
+      .branding { text-align: center; padding-bottom: 0; }
+      .branding .logo { font-size: 40px; }
+      .branding p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Branding -->
+    <div class="branding">
+      <div class="logo">facebook</div>
+      <p>Connect with friends and the world around you on Facebook.</p>
+    </div>
+
+    <!-- Login Card -->
+    <div class="login-card">
+      <input type="email" placeholder="Email address or phone number" autocomplete="username">
+      <input type="password" placeholder="Password" autocomplete="current-password">
+      <button class="btn-login" type="button">Log in</button>
+      <a class="forgot-link" href="#">Forgotten password?</a>
+      <div class="divider"></div>
+      <a class="btn-create" href="#">Create new account</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">English (UK)</a><a href="#">हिन्दी</a><a href="#">বাংলা</a>
+      <a href="#">తెలుగు</a><a href="#">मराठी</a><a href="#">தமிழ்</a>
+    </div>
+    <div class="footer-links">
+      <a href="#">Sign Up</a><a href="#">Log in</a><a href="#">Messenger</a>
+      <a href="#">Facebook Lite</a><a href="#">Privacy</a><a href="#">Cookies</a>
+      <a href="#">Terms</a><a href="#">Help Centre</a>
+    </div>
+    <p>Meta © 2025</p>
+  </footer>
+
+</body>
+</html>

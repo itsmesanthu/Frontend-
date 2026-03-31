@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            font-family: cursive;
+            overflow-x: hidden;
+        }
+        h1{
+            text-align: center; 
+            font-size: x-large;
+
+        }
+        nav{
+            display: flex;
+            justify-content:space-evenly;
+            gap: 20px;
+            height: 50px;
+            width: 100%;
+            background-color: lightgray;
+            padding:8px;
+            align-items: center;
+        
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }   
+    
+        /* mobile screen */
+        @media(max-width:600px){
+            body{
+                background-color: aqua;
+            }
+            nav{
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+                background-color: lightblue;
+                color: white;
+            }
+            
+        }
+        /* laptop screen */
+        @media(min-width:768px){
+        
+            
+        }
+        /* tablet screen */
+        @media(min-width:601px) and (max-width:768px){
+            body{
+                background-color: black;
+            }
+            h1{
+                color: white;
+            }
+          
+        }
+    </style>
+</head>
+<body>
+     <h1>Responsive Navigaton Bar</h1> 
+     <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Services</a>
+     </nav>
+</body>
+</html>
