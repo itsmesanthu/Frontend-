@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook – Log in or sign up</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     *, *::before, *::after {
       margin: 0;
@@ -32,6 +34,50 @@
       justify-content: center;
       min-height: 100vh;
       padding: 20px;
+      padding-top: 80px;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .fb-logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .fb-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1877f2;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box {
+      padding: 8px 12px;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      outline: none;
     }
 
     .container {
@@ -43,7 +89,6 @@
       max-width: 980px;
     }
 
-    /* LEFT: Branding */
     .branding {
       flex: 1;
       max-width: 440px;
@@ -66,7 +111,6 @@
       font-weight: 400;
     }
 
-    /* RIGHT: Login card */
     .login-card {
       background: #fff;
       border-radius: 8px;
@@ -151,7 +195,6 @@
       background: var(--green-hover);
     }
 
-    /* Footer */
     footer {
       margin-top: 28px;
       text-align: center;
@@ -167,7 +210,9 @@
       margin: 0 4px;
     }
 
-    footer a:hover { text-decoration: underline; }
+    footer a:hover {
+      text-decoration: underline;
+    }
 
     footer .footer-links {
       display: flex;
@@ -177,46 +222,80 @@
       margin-bottom: 8px;
     }
 
-    /* Responsive: stack on small screens */
     @media (max-width: 768px) {
-      .container { flex-direction: column; gap: 16px; }
-      .branding { text-align: center; padding-bottom: 0; }
-      .branding .logo { font-size: 40px; }
-      .branding p { font-size: 18px; }
+      .container {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .branding {
+        text-align: center;
+        padding-bottom: 0;
+      }
+
+      .branding .logo {
+        font-size: 40px;
+      }
+
+      .branding p {
+        font-size: 18px;
+      }
     }
+      @media(min-width:601px) and (max-width:768px){
+            body{
+                background-color: rgb(102, 235, 45);
+      }
+       }
+      @media(max-width:600px){
+            body{
+                background-color: rgb(194, 237, 36);
+      }
+      }
+      @media(min-width:769px) and (max-width:1024px){
+            body{
+                background-color: rgb(24, 115, 233);
+      }
+      }
   </style>
 </head>
+
 <body>
 
+  <header class="header">
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" class="fb-logo">
+      <span class="fb-name">Facebook</span>
+    </div>
+  </header>
+
   <div class="container">
-    <!-- Branding -->
     <div class="branding">
       <div class="logo">facebook</div>
       <p>Connect with friends and the world around you on Facebook.</p>
     </div>
 
-    <!-- Login Card -->
     <div class="login-card">
-      <input type="email" placeholder="Email address or phone number" autocomplete="username">
-      <input type="password" placeholder="Password" autocomplete="current-password">
-      <button class="btn-login" type="button">Log in</button>
+      <input type="email" placeholder="Email address or phone number">
+      <input type="password" placeholder="Password">
+      <button class="btn-login">Log in</button>
       <a class="forgot-link" href="#">Forgotten password?</a>
       <div class="divider"></div>
       <a class="btn-create" href="#">Create new account</a>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
     <div class="footer-links">
-      <a href="#">English (UK)</a><a href="#">हिन्दी</a><a href="#">বাংলা</a>
-      <a href="#">తెలుగు</a><a href="#">मराठी</a><a href="#">தமிழ்</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Log in</a>
+      <a href="#">Messenger</a>
+      <a href="#">Facebook Lite</a>
+      <a href="#">Privacy</a>
+      <a href="#">Cookies</a>
+      <a href="#">Terms</a>
+      <a href="#">Help Centre</a>
     </div>
-    <div class="footer-links">
-      <a href="#">Sign Up</a><a href="#">Log in</a><a href="#">Messenger</a>
-      <a href="#">Facebook Lite</a><a href="#">Privacy</a><a href="#">Cookies</a>
-      <a href="#">Terms</a><a href="#">Help Centre</a>
-    </div>
+
     <p>Meta © 2025</p>
   </footer>
 
