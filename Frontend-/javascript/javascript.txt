@@ -1,0 +1,102 @@
+===> javascript <===
+> it is a scripting and prrogramming language used to add functionality to the webpage.
+> 95% webpage are desined using javascript javascript
+> it is ligth weigth because it will not consume much memory
+> cross platfom:
+        user can write code in one device and use can run in anoter diveics
+> javascript it is dynamically type longuage ()
+        in js while declareing variables no data type name so iti called dynamically type
+> no need of any complier install it comple an browser it has built in complier
+
+===> what is                                                                                                                                                                                                  javascript<===
+> Javascript is a light weight object-oriented programming language used for client and sever side technology
+> It was called scripting language before 2010 because it as used only for browser
+> But now we can use this language for database server, application server and mobile devices also so it is called programming
+
+===> Role of JavaScript in web development <===
+> JavaScript is the programming language that makes websites Interactive, dynamic, and functional.
+> if you think of a website like a human body:
+        * HTML Skeleton (structure)
+        * CSS→ Appearance (design)
+        * JavaScript→ Brain (behavior & logic)
+Without JavaScript, websites would be mostly static pages
+===> history of javascript <===
+> In 1993 mosaic was the first popular web browser to handle (GUI) but it could handle only static webpages
+> In 1994 Netscape corp started new project called Netscape navigator
+> Netscape navigator is a browser which have dynamic capabilities.
+> It was invented by Brendan Eich. He was given the task to create programming language which would add dynamic capabilities to browser.
+> It has been officially released on 1995 as name called mocha. later they give name livescript.
+> Due to marketing purpose they give name javascript. Because java was more popular during 1990's
+===> featuer of javascript <===
+> All popular web browsers support javascript as they provide built in execution environments.
+> Js follows the C language syntax and structure so it is called structured programming language.
+> Js is an object oriented programming language like it has oops concept.
+> It is a lightweight and interpreted language.
+> It is a case sensitive language.
+> Js is supported in servaral operating systems including windows, macos, linux etc.
+===> Uses of JavaScript <===
+> Used for building simple and complex web applications. example: google maps
+> We can create mobile apps using javascript. (React Native)
+> Game development (physics.js,pii.js)
+> Creating webservers (node js)
+> Creating client side applications or dynamic user interface (React is)
+===> What is the purpose of JavaScript? <===
+> It is used to create dynamic user interface on webpage.
+> It is used to do cifent side validation and server side validation 
+> It is used to interact or integrate front end app and backend application
+===> What kind of application we can build using JavaScript? <===
+> We can build entire web application
+> We can build mobile apps like jos, android.
+> We can develop standalone application (desktop application liks vscode, notepad, browser, ms paint etc)
+> We can build machine learning application
+            JavaScript                           Java
+---------------------------------------------------------------------------
+Origin      * Created in 1995 for                * Created in 1995 by
+              web browsers                          Sun Microsystems
+                                                    (now owned by Oracle)
+
+Type        * Scripting / Programming             * Pure Programming
+              language                              language
+
+Execution   * Runs in browser and                 * Runs on Java Virtual
+              Node.js                               Machine (JVM)
+
+Platform    * Cross-platform                      * Platform-independent
+                                                    (Write once, run anywhere)
+
+Compilation * Interpreted language                * Compiled language
+              (runs directly in browser)            (needs compiler)
+
+Usage       * Mainly used for web                 * Used for enterprise
+              development                           applications, Android apps
+
+Speed       * Faster for web pages                * Faster for large
+                                                    applications
+
+File        * .js extension                       * .java extension
+
+Syntax      * Simple and flexible                 * Strict and structured
+
+Typing      * Dynamically typed                   * Statically typed
+              (no data type required)               (data type required)
+
+Example     * var x = 10;                         * int x = 10;
+
+OOP         * Supports Object-Oriented            * Fully Object-Oriented
+              Programming concepts
+
+Memory      * Lightweight                         * Uses more memory
+===>Where Does JavaScript Run? <===
+> JavaScript runs in browser and node js
+    In Web Browsers (Frontend)
+> Every modern browser has a built-in JavaScript engine.
+> Examples:
+    * Google Chrome V8 Engine
+    * Mozilla Firefox→ Spider Monkey
+    * Microsoft Edge V8 Engine
+    * Safari→ JavaScriptCore
+===>javascript ways <===
+> we write the javascript in three way there are :
+        * head section -> write code inside  the head section
+        * body section -> write code inside the body section it best to write a code
+        * external js  -> write code in another files like : indedx.js
