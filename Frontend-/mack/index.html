@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWSCARE</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .cart{
+            height: 50px;
+            width: 60px;
+        }
+        .manu{
+            margin-top: 30px;
+            display: flex;
+            justify-content: 10px space-between;
+        }
+        .manu a{
+            margin: 20px;
+            color: rgb(1, 1, 1);
+            text-decoration: none;
+        }
+        .manu a:hover{
+            color: orange;
+        }
+        .phone{
+            height: 50px;
+            background-color: rgb(118, 62, 24);
+            border: 1px solid none;
+            border-radius: 5px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .cat{
+            height: 600px;
+            width: 100%;
+            background-image:url("1.jpg") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .card1{
+            height: 400px;
+            width: 30%;
+            width:300px;
+            backdrop-filter: blur;
+            border: none;
+            border-radius:10px;
+            box-shadow:0 40px 100px rgba(2, 2, 2, 0.2);
+            padding-top:60px;
+             padding-left:60px;
+            
+        }
+        h1{
+            color: white;
+        }
+        button{
+            height: 60px;
+            width: 160px;
+            border: none;
+            background-color: orange;
+            color: white;
+            transition: width,border-radius,text-transform,border,box-shadow,background-image;
+            transition-duration: 10s;
+
+        }
+        .cards{
+            margin-left: 100px;
+            height: 210px;
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card2{
+            margin-top: 20px;
+            padding-top: 20px;
+            height: 150px;
+            width: 270px;
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid  none;
+            border-radius: 10px;
+             box-shadow:0 40px 100px rgba(2, 2, 2, 0.2);
+            background-color: white;
+
+        }
+        .aboutus{
+            margin-top:200px;
+            height: 600px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding:8px;
+            align-items: center;
+    
+        }
+        .dog{
+            margin: 20px;
+            height: 500px;
+            width: 50%;
+            background-image:url("2.png") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .hi{
+            height: 60px;
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .one{
+            color: black;
+        }
+        .card3{
+            height: 150px;
+            width: 270px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:column;
+        }
+        .services{
+            margin-top: 500px;
+            height: inherit;
+            width: 100%;
+            margin-top: 100px;
+            text-align: center;
+            background-color: bisque;
+            padding: 50px;
+        }
+        .images{
+            margin: 70px;
+            height: 200px;
+            width: 80%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+        h3{
+            border: 1px solid none;
+            background-color: rgb(118, 62, 24);
+            color: white;
+        }
+        .two{
+            border: 1px  solid none;
+            background-color: white;
+            color: orange;
+            border-radius: 5px;
+        }
+        button:hover{
+            width: 200px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            border: 5px solid none;
+            box-shadow: 0px 0px 7px red;
+            background-image: linear-gradient(orange,yellow);
+            border-radius: 60px;
+        }
+        .ONEEE{
+                display: flex;
+                justify-content: space-between;
+        }
+        @media(max-width:600px){
+            body{
+                background-color: rgb(192, 227, 227);
+            }
+            .header{
+                align-items: center;
+                 flex-direction: column;
+                height: auto;
+                width: auto;
+                padding: 20px;
+
+            }
+            .ONEEE{
+                display: flex;
+                justify-content: space-between;
+            }
+            .aboutus{
+                flex-direction: column;
+                height: auto;
+                width: auto;
+                padding: 20px;
+            }
+            .images{ 
+                 flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+        }
+        @media(min-width:601px) and (max-width:768px){
+            .aboutus{
+                height: auto;
+                width: auto;
+                padding: 20px;
+            }
+            .images{ 
+                height: auto;
+                margin: 20px;
+            }
+
+        }
+        .box1{
+            height:100px;
+            width: 100px;
+            text-align: center;
+            position: fixed;
+            background-color: blue;
+            margin:50px auto; 
+            animation: animation1 5s infinite;
+        } 
+        @keyframes animation {
+             from{background-color: red;}
+             to{background-color: yellow;}
+        }
+         @keyframes animation1 {
+             0%{background-color: red;border-radius: 10px;transform: rotate(90deg);}
+             25%{background-color: yellow;border-radius: 10px;transform: rotate(180deg);}
+             50%{background-color: pink;border-radius: 10px;transform: rotate(200deg);}
+             75%{background-color: pink;border-radius: 10px;transform: rotate(250deg);}
+                  100%{background-color:olivedrab;border-radius: 10px;transform: rotate(360deg);}
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><img src="logo.png" alt="pawscare"></div>
+            <div class="manu">
+                <div><a href="#"> home </a></div>
+                <div><a href="#">pages </a></div>
+                <div> <a href="#">portflio </a></div>
+                <div><a href="#">blog </a></div>
+                <div><a href="#">shop </a></div>
+                <div><a href="#">contacts </a></div>
+            </div>
+           <DIV CLASS="ONEEE">
+            <div class="cart">
+                <img src="cart.png" alt="cart" height="50px" width="60px">
+            </div>
+            <div class="cart">
+                <img src="search (1).png" alt="search"height="50px" width="60px">
+            </div>
+            <div class="phone">
+            <div class="phone-log"><img src="phone-call.png" alt="phone number" height="50px" width="60px"></div>
+            <div ><p>+1 800 123 456 789</p></div>
+            </div>
+            </DIV>
+        </div>
+    </header>
+    <div class="cat">
+        <div class="card1">
+        <h3 class="two">WELCOME TO PAWSCARE</h3>
+        <H1>Best Care Of our little Friends</H1>
+        <button> LEARN MORE</button>
+        </div >
+        <div class="cards">
+        <div class="card2">
+            <div><img src="8.jpg" alt="" height="50px" width="60px"></div>
+            <div><h4><b>pet boarding</b></h4>
+            <p>place for dogs & cats to stay while you're away!</p></div>
+        </div>
+        <div class="card2">
+            <div><img src="6.jpg" alt="" height="50px" width="60px"></div>
+            <div><h4><b>veterinary Care</b></h4>
+            <p>pet health and wellness taht's one step ahead.</p></div>
+        </div>
+        <div class="card2">
+            <div><img src="7.png" alt=""height="50px" width="60px"></div>
+            <div><h4><b>pet grooming</b></h4>
+            <p>makinh dogs and cats look great is our passion !</p></div>
+        </div>
+        </div>
+    </div>
+    <div class="box1">
+        <h5>We love to take care of your Pets</h5></div>
+    <div class="aboutus">
+        <div class="dog"></div>
+        <div class="about">
+            <button>aboutus</button>
+            <h1 class="one">We love to take care of your Pets</h1>
+            <p>pawscare is the largest specialty pet retailer of services and solutions 
+                for the lifetime needs of pets.At pawscare ,we love pets , and we beleve make us better people
+            </p>
+            <div class="hi">
+                <div class="card3">
+                    <div><img src="approve.png" alt=""height="50px" width="60px"></div>
+                    <div><h4>skilled personal</h4> </div>
+                    <div><img src="approve.png" alt=""height="50px" width="60px"></div>
+                    <div><h4>best veterinars</h4> </div>
+                </div>
+                <div class="card3">
+                    <div><img src="approve.png" alt=""height="50px" width="60px"></div>
+                    <div><h4>pets care 24/7</h4> </div>
+                    <div><img src="approve.png" alt=""height="50px" width="60px"></div>
+                    <div><h4>quolity food</h4></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <br>
+        <br>
+        <div class="services">
+            <button>SERVICES</button>
+            <H2>what we can offer</H2>
+            <p>pawscare is the largest specialty pet retailer of services and solutiontios 
+                for the lifetime needs of pets At pawsacre ,we love pets.
+            </p>
+        
+        <div class="images">
+            <div class="ad"><img src="3.jpeg" alt="" height="200px" width="300px"><br><h3>hotel for pets</h3></div>
+            <div class="ad"><img src="4.jpeg" alt="" height="200px" width="300px"> <br><h3>veteinary care</h3></div>
+            <div class="ad"><img src="5.jpg" alt=""  height="200px" width="300px"><br> <h3>best activity</h3></div>
+        </div>
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

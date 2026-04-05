@@ -30,7 +30,7 @@
     </script>
     <h1>intilazition</h1>
         <script>
-            const age=21
+            const age1=21
             var a=true
             let lname=" g r"
             document.write(age)
@@ -42,33 +42,64 @@
         </script>
         <h2>redeclare and reassign</h2>
         <hr>
-       <h3>var</h3>
-        <script>
-            var name="tanu"
-            document.write(name)
-            document.write("<br>")
-            var name="boss"
-            document.write(name)
-            document.write("<br>")
-        </script>
-        <h3>let</h3>
-        <script>
-            let name="tanu"
-            document.write(name)
-            document.write("<br>")
-            let name="boss"
-            document.write(name)
-            document.write("<br>")
-        </script>
-        <h3>const</h3>
-        <script>
-            const age=22
-            document.write(age)
-            document.write("<br>")
-            const age=21
-            document.write(age)
-            document.write("<br>")
-        </script>
+       <h3>VAR Example</h3>
+<script>
+// var allows REDECLARATION
+var name = "tanu"
+document.write("First value: " + name)
+document.write("<br>")
+// Redeclaration allowed
+var name = "boss"
+document.write("After redeclaration: " + name)
+document.write("<br>")
+// Reassignment allowed
+name = "developer"
+document.write("After reassignment: " + name)
+document.write("<br>")
+// var is FUNCTION scoped
+function testVar() {
+    var city = "Bangalore"
+    document.write("Inside function: " + city)
+    document.write("<br>")
+}
+testVar()
+// document.write(city)  // ERROR (outside function)
+</script>
+        <h3>LET Example</h3>
+<script>
+// let does NOT allow redeclaration
+let name1 = "tanu"
+document.write("First value: " + name1)
+document.write("<br>")
+// let name1 = "boss"   // ERROR: Cannot redeclare
+// Reassignment allowed
+name1 = "boss"
+document.write("After reassignment: " + name1)
+document.write("<br>")
+// let is BLOCK scoped
+{
+    let color = "red"
+    document.write("Inside block: " + color)
+    document.write("<br>")
+}
+// document.write(color)  // ERROR (block scope)
+</script>
+<h3>CONST Example</h3>
+<script>
+// const must be initialized
+const age = 22
+document.write("Age: " + age)
+document.write("<br>")
+// const age = 25   // ERROR: Cannot redeclare
+// age = 30         // ERROR: Cannot reassign
+// Block scope example
+{
+    const country = "India"
+    document.write("Country: " + country)
+    document.write("<br>")
+}
+// document.write(country)  // ERROR
+</script>
 
     
 </body>
