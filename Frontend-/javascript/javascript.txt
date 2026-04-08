@@ -100,3 +100,279 @@ Memory      * Lightweight                         * Uses more memory
         * head section -> write code inside  the head section
         * body section -> write code inside the body section it best to write a code
         * external js  -> write code in another files like : indedx.js
+===>javascript data type<==
+        •	 Javascript Datatypes
+- It is used to define the type of data which we are adding to varlables
+       -  There are 8 types datatypes in javascript
+1. Number
+2 string
+3.boolcan
+4. undefined
+5.nulll
+6. Bigint
+7 symbol
+B.Object type
+* primitive data types
+1. Number
+2. string
+3.boolean
+4. undefined
+5.null
+6.Bigint
+7. symbol.
+all primitive datatypes are basic datatypa all primitive datatypes are inutable stored directly in stack memory
+
+* non primitive data types
+1. objest
+aon primitira datatypes are copler
+non primitive datatypes are stable stored directly in heap mendry
+but array is net catatype it valll comes uder coject catatya
+==================================================================================================================================================
+                JAVASCRIPT
+
+======================================== 
+JAVASCRIPT FEATURES
+========================================
+
+1.  Lightweight JavaScript uses less memory and runs quickly in the
+    browser.
+
+2.  Interpreted Language JavaScript does not need a separate compiler.
+    The browser reads and executes the code line by line.
+
+3.  Dynamically Typed You do not need to specify the data type.
+
+Example: let x = 10; x = “Hello”;
+
+4.  Cross Platform JavaScript code can run on:
+
+-   Windows
+-   Mac
+-   Linux
+-   Mobile devices
+
+5.  Object-Oriented JavaScript supports OOP concepts like:
+
+-   Objects
+-   Classes
+-   Inheritance
+-   Encapsulation
+
+======================================== 
+ VARIABLES 
+========================================
+
+A variable is a named memory location used to store data.
+
+Syntax: keyword variableName = value;
+
+Example: let age = 21;
+
+Rules for Variable Names:
+
+1.  Must start with:
+    -   Letter
+    -   Underscore (_)
+    -   Dollar ($)
+2.  Cannot start with number
+
+Wrong: let 1age = 21;
+
+3.  Cannot use keywords
+
+Wrong: let let = 10;
+
+4.  Case sensitive
+
+age and Age are different.
+
+----------------------------------------
+tpye 1: var 
+----------------------------------------
+var is the old way to declare variables.
+Example: var name = “John”;
+Characteristics:
+
+-   Function scope
+-   Can redeclare variable
+-   Can update value
+-   Hoisted to top
+
+Example:
+
+var x = 10; var x = 20;
+
+----------------------------------------
+type 2: let 
+----------------------------------------
+
+let is modern variable declaration.
+
+Example: let city = “Mumbai”;
+
+Characteristics:
+
+-   Block scope
+-   Cannot redeclare
+-   Can update value
+-   Recommended to use
+
+Example:
+
+let age = 25; age = 30;
+----------------------------------------
+type 3: const 
+----------------------------------------
+
+const is used for constant values.
+
+Example: const PI = 3.14;
+
+Characteristics:
+
+-   Block scope
+-   Cannot update value
+-   Cannot redeclare
+-   Must assign value immediately
+
+Wrong:
+
+const x;
+
+======================================== 
+DATA TYPES
+========================================
+
+JavaScript has two categories of data types:
+
+1.  Primitive Data Types
+2.  Non-Primitive Data Types
+
+  ----------------------
+  Primitive Data Types
+  ----------------------
+
+1.  String
+
+Stores text.
+
+Example: let name = “Rahul”;
+
+2.  Number
+
+Stores numbers.
+
+Example: let marks = 95;
+
+3.  Boolean
+
+Stores true or false.
+
+Example: let isPassed = true;
+
+4.  Undefined
+
+Variable declared but not assigned.
+
+Example: let x;
+
+5.  Null
+
+Represents empty value.
+
+Example: let data = null;
+
+6.  BigInt
+
+Used for very large numbers.
+
+Example: let bigNumber = 12345678901234567890n;
+
+7.  Symbol
+
+Used to create unique identifiers.
+
+Example: let id = Symbol(“user”);
+
+  --------------------------
+  Non-Primitive Data Types
+  --------------------------
+
+1.  Object
+
+Stores key-value pairs.
+
+Example:
+
+let person = { name: “John”, age: 25 };
+
+2.  Array
+
+Stores multiple values.
+
+Example:
+
+let numbers = [10, 20, 30];
+
+3.  Function
+
+A block of reusable code.
+
+Example:
+
+function greet() { console.log(“Hello”); }
+
+======================================== 
+ TYPEOF OPERATOR 
+========================================
+
+typeof is used to check the data type of a variable.
+
+Example:
+
+let age = 25; console.log(typeof age);
+
+Output: number
+
+More Examples:
+
+typeof “Hello” → string typeof true → boolean typeof null → object
+typeof [] → object
+
+========================================
+ TYPE CONVERSION 
+========================================
+
+Type conversion means changing one data type into another.
+
+  ------------------------
+  1. Implicit Conversion
+  ------------------------
+
+JavaScript automatically converts data types.
+
+Example:
+
+let result = “5” + 2;
+
+Output: 52
+
+  ------------------------
+  2. Explicit Conversion
+  ------------------------
+
+Programmer manually converts data type.
+
+String to Number:
+
+let num = Number(“100”);
+
+Number to String:
+
+let str = String(100);
+
+Boolean to Number:
+
+let num = Number(true);
+
+Output: 1
