@@ -1,0 +1,6 @@
+console.log(10==20 && 20==33)
+console.log(10==20 || 10==10)
+console.log(true && true)
+console.log(true || false)
+console.log(!false)
+console.log(!(10==20))

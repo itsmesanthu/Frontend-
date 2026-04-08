@@ -253,73 +253,49 @@ JavaScript has two categories of data types:
   ----------------------
 
 1.  String
-
 Stores text.
-
 Example: let name = “Rahul”;
 
 2.  Number
-
 Stores numbers.
-
 Example: let marks = 95;
 
 3.  Boolean
-
 Stores true or false.
-
 Example: let isPassed = true;
 
 4.  Undefined
-
 Variable declared but not assigned.
-
 Example: let x;
 
 5.  Null
-
 Represents empty value.
-
 Example: let data = null;
 
 6.  BigInt
-
 Used for very large numbers.
-
 Example: let bigNumber = 12345678901234567890n;
 
 7.  Symbol
-
 Used to create unique identifiers.
-
 Example: let id = Symbol(“user”);
 
   --------------------------
   Non-Primitive Data Types
   --------------------------
-
 1.  Object
-
 Stores key-value pairs.
-
 Example:
-
 let person = { name: “John”, age: 25 };
 
 2.  Array
-
 Stores multiple values.
-
 Example:
-
 let numbers = [10, 20, 30];
 
 3.  Function
-
 A block of reusable code.
-
 Example:
-
 function greet() { console.log(“Hello”); }
 
 ======================================== 
@@ -331,48 +307,136 @@ typeof is used to check the data type of a variable.
 Example:
 
 let age = 25; console.log(typeof age);
-
 Output: number
 
 More Examples:
-
 typeof “Hello” → string typeof true → boolean typeof null → object
 typeof [] → object
 
 ========================================
  TYPE CONVERSION 
 ========================================
-
 Type conversion means changing one data type into another.
-
   ------------------------
   1. Implicit Conversion
   ------------------------
-
 JavaScript automatically converts data types.
 
 Example:
-
 let result = “5” + 2;
-
 Output: 52
 
   ------------------------
   2. Explicit Conversion
   ------------------------
-
 Programmer manually converts data type.
 
 String to Number:
-
 let num = Number(“100”);
 
 Number to String:
-
 let str = String(100);
 
 Boolean to Number:
-
 let num = Number(true);
-
 Output: 1
+========================================
+Operators in javascript
+========================================
+
+- Javascript operators are symbols that are used to perform operations on operands
+- We have different types of operators they are
+      1. Arithmetic operators
+      2. Comparison operators
+      3. Bitwise operators
+      4. Logical operators
+      5. Assignment operators
+      6. Special operators
+      
+-------------------------
+  1. Arithmetic operators
+-------------------------
+
+Definition:
+Arithmetic operators are used to perform mathematical calculations.
+
+---------------------------------
+| Operator | Meaning            |
+|----------|--------------------|
+| +        | Addition           |
+| -        | Subtraction        |
+| *        | Multiplication     |
+| /        | Division           |
+| %        | Modulus (remainder)|
+| **       | Exponent (power)   |
+| ++       | Increment          |
+| --       | Decrement          |
+---------------------------------
+--------------------------
+  2. Comparison operators
+--------------------------
+
+Definition:
+Comparison operators compare two values and return true or false.
+
+------------------------------------------
+| Operator | Meaning                     |
+|----------|-----------------------------|
+| ==       | Equal to (value only)       |
+| ===      | Strict equal (value + type) |
+| !=       | Not equal                   |
+| !==      | Strict not equal            |
+| >        | Greater than                |
+| >=       | Greater than or equal       |
+| <        | Less than                   |
+| <=       | Less than or equal          |
+------------------------------------------
+------------------------
+  3. Bitwise operators
+------------------------
+
+Definition:
+Bitwise operators work on binary numbers (bits).
+
+-----------------------------------
+| Operator | Meaning              |
+|----------|----------------------|
+| &        | AND                  |
+| |        | OR                   |
+| ^        | XOR                  |
+| ~        | NOT                  |
+| <<       | Left shift           |
+| >>       | Right shift          |
+-----------------------------------
+------------------------
+  4. Logical operators
+------------------------
+
+Definition:
+Logical operators are used to combine conditions.
+
+---------------------
+| Operator | Meaning|
+|----------|--------|
+| &&       | AND    |
+| ||       | OR     |
+| !        | NOT    |
+---------------------
+--------------------------
+  5. Assignment operators
+--------------------------
+
+Definition:
+Assignment operators assign values to variables.
+
+-------------------------------------
+| Operator | Meaning                |
+|----------|------------------------|
+| =        | Assign value           |
+| +=       | Add and assign         |
+| -=       | Subtract and assign    |
+| *=       | Multiply and assign    |
+| /=       | Divide and assign      |
+| %=       | Modulus and assign     |
+| **=      | Power and assign       |
+-------------------------------------
