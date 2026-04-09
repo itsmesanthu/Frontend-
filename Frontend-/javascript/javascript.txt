@@ -440,3 +440,20 @@ Assignment operators assign values to variables.
 | %=       | Modulus and assign     |
 | **=      | Power and assign       |
 -------------------------------------
+------------------------
+    6. Special operators
+------------------------
+
+Definition:
+Special operators perform special operations like checking type or object properties.
+
+-------------------------------------------
+| Operator   | Meaning                    |
+|------------|----------------------------|
+|(?:).       |conditional operater        |
+| typeof     | Check data type            |
+| instanceof | Check object type          |
+| in         | Check property in object   |
+| delete     | Remove property            |
+| new        | Create new object          |
+------------------------------------------
