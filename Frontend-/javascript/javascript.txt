@@ -456,4 +456,152 @@ Special operators perform special operations like checking type or object proper
 | in         | Check property in object   |
 | delete     | Remove property            |
 | new        | Create new object          |
-------------------------------------------
+-------------------------------------------
+========================================
+        JavaScript Function
+========================================
+
+Definition:
+A function is a block of code designed to perform a specific task.
+A function is executed when it is called (invoked).
+
+Advatages of function:
+    1.recusability of code
+    2. less coding
+How to create a function in js?
+    *Always the function name should represent the particular behavior.
+    *function won't get automatitally invoked unless and until we invoke.
+Syntax:
+
+function functionName(parameters) {
+    // code to be executed
+}
+-------------------------------
+    Type of js function
+-------------------------------
+  1 named function
+  2.⁠ ⁠parameterized function
+  3.⁠ ⁠return function
+  4 anonyinous function
+  5.⁠ ⁠callback function
+  6.Hiigher order function
+  7.arrow function
+  8.immediately invoked function
+  9.⁠ ⁠Currying function
+  10.Pure function
+  11.async function
+
+Named Function:
+----------------
+Definition:
+A named function is a function defined using the function keyword
+with a specific name.
+
+Advantages of Named Function:
+    1. Easy to reuse the function.
+    2. Improves code readability.
+    3. Can be called multiple times.
+
+How to create a Named function in JS?
+    * Use the function keyword.
+    * Provide a function name.
+    * Call the function to execute.
+
+Syntax:
+function functionName() {
+    // code to be executed
+}
+
+
+Parameterized Function:
+-----------------------
+Definition:
+A parameterized function is a function that accepts input values called parameters.
+Advantages of function:
+    1.Dynamic input handling
+    2.Code flexibility
+How to create a function in JS?
+    * Define parameters inside parentheses
+    * Pass values while calling the function
+Syntax:
+    function functionName(parameter1, parameter2) {
+        // code
+    }
+
+Return funciton:
+-----------------
+Definition:
+A return function is a function that sends a value back using the return keyword.
+Advantages of function:
+    1. Returns result to caller
+    2. Can store output in variables
+
+How to create a function in JS?
+    * Use return keyword
+    * Store the returned value
+    * ofter using return it belowe code is not run 
+
+Syntax:
+    function functionName() {
+        return value
+    }
+
+Anonymous Function:
+---------------------
+Definition:
+An anonymous function is a function without a name.
+
+Advantages of function:
+    1. Useful for temporary operations
+    2. Used in callbacks and events
+How to create a function in JS?
+    * Assign function to a variable
+Syntax:
+    var variableName = function() {
+          // code
+    }
+
+Callback Function:
+---------------------
+Definition:
+A callback function is a function passed as an argument to another function.
+
+Advantages of function:
+    1. Enables asynchronous programming
+    2. Improves flexibility
+How to create a function in JS?
+    * Pass a function as parameter
+Syntax:
+    function mainFunction(callback) {
+        callback()
+    }
+
+Arrow Function:
+----------------
+Definition:
+An arrow function is a shorter syntax for writing functions using =>.
+Advantages of function:
+    1. Shorter syntax
+    2.Cleaner code
+How to create a function in JS?
+    * Use arrow symbol =>
+Syntax:
+    const functionName = (parameters) => {
+        // code
+    }
+
+Immediately Invoked Function (IIFE):
+--------------------------------------
+Definition:
+An IIFE is a function that runs immediately after it is defined.
+Advantages of function:
+    1. Runs automatically
+    2. Avoids global variable pollution
+How to create a function in JS?
+    * Wrap function in parentheses
+    * Add () to invoke
+Syntax:
+    (function() {
+        // code
+    })();
+    
