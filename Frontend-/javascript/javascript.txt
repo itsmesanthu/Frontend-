@@ -604,4 +604,19 @@ Syntax:
     (function() {
         // code
     })();
-    
+
+Currying Function:
+---------------------
+Definition:
+A currying function is a function that returns another function.
+Advantages of function:
+    1. Breaks complex functions
+    2. Improves reusability
+How to create a function in JS?
+    * Return a function inside another function
+Syntax:
+    function functionName(a) {
+        return function(b) {
+            // code
+        }
+    }
