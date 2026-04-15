@@ -620,3 +620,362 @@ Syntax:
             // code
         }
     }
+
+Pure Function:
+-----------------
+Definition:
+A pure function always returns the same output for the same input and has no side effects.
+Advantages of function:
+    1. Predictable results
+    2. Easy testing
+How to create a function in JS?
+    * Use only input parameters
+    * Do not modify external variables
+Syntax:
+    function functionName(parameters) {
+        return result
+    }
+
+Async Function:
+------------------
+Definition:
+An async function is a function that works asynchronously using async and await.
+Advantages of function:
+    1. Handles asynchronous operations
+    2. Improves readability of async code
+How to create a function in JS?
+    * Use async keyword
+Syntax:
+    async function functionName() {
+        // code
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+============================
+JAVASCRIPT OBJECT — THEORY
+============================
+• JavaScript is an object-based language.
+• An object is a combination of properties and behavior (methods).
+• An object represents a real-world entity.
+• JavaScript is template-based, not purely class-based.
+• An object is a collection of key and value pairs.
+
+Example:
+name → "John"
+age → 25
+
+Here:
+name and age are keys
+"John" and 25 are values
+
+
+HOW TO CREATE OBJECTS IN JAVASCRIPT
+
+1. By using Object Literals
+2. By using Constructor Function
+3. By using Object.create()
+4. By using Class Syntax (ES6)
+
+
+OBJECT OPERATIONS (CRUD)
+
+1. Create / Insert
+   object.key = value
+   object["key"] = value
+
+2. Read
+   console.log(object.key)
+
+3. Update
+   object.key = newValue
+
+4. Delete
+   delete object.key
+
+
+OBJECT METHODS
+
+Object.keys()     → returns all keys
+Object.values()   → returns all values
+Object.entries()  → returns key-value pairs
+
+
+REAL-WORLD EXAMPLE
+
+Student Object:
+Name
+Grade
+Study Method
+
+Product Object:
+Name
+Price
+Stock
+Category
+Rating
+
+ OBJECT CREATION (Object Literal)
+   - An object is created using {}.
+   - It contains key-value pairs.
+   - Example:
+       name: "tanu"
+       age: 21
+ PROPERTIES OF OBJECT
+   - Properties are data stored inside an object.
+   - Example:
+       name, age, height, city
+
+ARRAY INSIDE OBJECT
+   - An object can contain arrays as values.
+   - Example:
+       skill: ["sleeping", "eating", "sleeping"]
+
+METHODS IN OBJECT
+   - A function inside an object is called a method.
+   - Example:
+       play: function(){...}
+
+"this" KEYWORD
+   - Refers to the current object.
+   - Used to access object properties inside methods.
+   - Example:
+       this.name
+       this.height
+ ACCESSING OBJECT DATA
+   - Dot notation:
+       person.age
+   - Array index:
+       person.skill[1]
+
+DISPLAYING OBJECT
+   - console.log(person)
+   - Prints full object
+
+OBJECT METHODS
+
+   a) Object.keys(object)
+      - Returns all keys in an array
+      - Example output:
+        ["name","age","skill","height","city","play"]
+
+   b) Object.values(object)
+      - Returns all values in an array
+      - Example output:
+        ["tanu",21,[...],"150cm","matikere",function]
+
+OBJECT.SEAL()
+----------------
+   - Prevents adding or deleting properties
+   - Existing properties CAN be modified
+   - Example:
+       person.newProp = "test"  ❌ Not allowed
+       delete person.age       ❌ Not allowed
+       person.age = 22         ✅ Allowed
+
+note:-
+   - Object stores data + behavior
+   - "this" refers to current object
+   - Object.keys() → get keys
+   - Object.values() → get values
+   - Object.seal() → restrict structure
+   
+Object.assign()
+-----------------
+- Object.assign() is a built-in JavaScript method.
+- It is used to copy properties from one or more source objects to a target object.
+- It merges objects together into a single object.
+- It returns the modified target object.
+
+MAIN PURPOSE
+
+1. Copy properties from one object to another
+2. Merge multiple objects
+3. Create a shallow copy of an object
+
+IMPORTANT POINTS
+
+- It copies only enumerable properties.
+- It performs a shallow copy (not deep copy).
+- If properties have the same name, the last value overwrites the previous one.
+- The target object gets updated.
+
+SYNTAX
+
+Object.assign(target, source1, source2, ...)
+
+TERMS
+
+Target:
+The object that receives the properties.
+
+Source:
+The object(s) from which properties are copied.
+
+Object.entries()
+---------------------
+- Object.entries() is a built-in JavaScript method.
+- It returns all the properties of an object.
+- The result is returned as an array.
+- Each element in the array is a pair of key and value.
+- The pair is stored as a sub-array.
+
+PURPOSE
+
+- To get both keys and values together.
+- To convert an object into an array format.
+- Useful for looping through object data.
+
+RETURN TYPE
+
+- Returns an array of key-value pairs.
+
+SYNTAX
+
+Object.entries(object_name)
+
+IMPORTANT POINTS
+
+- It includes only enumerable properties.
+- The order of entries follows the order of properties in the object.
+- It does not change the original object.
+
+Object.freeze()
+--------------------
+- Object.freeze() is a built-in JavaScript method.
+- It is used to completely lock an object.
+- It prevents adding new properties.
+- It prevents deleting existing properties.
+- It prevents modifying existing property values.
+- The object becomes read-only.
+
+PURPOSE
+
+- To protect an object from any changes.
+- To make object data constant.
+- To ensure data safety.
+
+SYNTAX
+
+Object.freeze(object_name)
+
+IMPORTANT POINTS
+
+- No new properties can be added.
+- Existing properties cannot be deleted.
+- Existing property values cannot be changed.
+- It returns the same frozen object.
+- It performs a shallow freeze (nested objects can still change).
+
+=========================
+JAVASCRIPT ARRAY
+=========================
+- JavaScript Array is a special variable used to store multiple values in a single variable.
+- Arrays store data in an ordered list.
+- Each value in an array is called an element.
+- Each element has an index number.
+- Index numbering starts from 0.
+
+CHARACTERISTICS OF ARRAY
+
+1. Arrays can store multiple values.
+2. Arrays can store different data types.
+3. Arrays are dynamic (size can change).
+4. Arrays are zero-indexed.
+5. Arrays are objects in JavaScript.
+
+ARRAY CREATION METHODS
+
+1. Using Array Literal
+2. Using new Array() constructor
+
+ARRAY SYNTAX
+-------------------------
+
+1. Array Declaration
+
+   var array_name;
+
+2. Array Initialization (Array Literal)
+
+   var array_name = [value1, value2, value3];
+
+3. Array Using Constructor
+
+   var array_name = new Array(value1, value2, value3);
+
+4. Accessing Array Element
+
+   array_name[index];
+
+5. Updating Array Element
+
+   array_name[index] = new_value;
+
+6. Finding Array Length
+
+   array_name.length;
+
+ARRAY INDEX
+
+- Index is the position of an element in an array.
+- First element index is 0.
+- Second element index is 1.
+- Last element index is length - 1.
+
+ARRAY PROPERTIES
+
+length
+- Returns the number of elements in the array.
+
+ARRAY COMMON OPERATIONS
+
+1. Add element
+2. Remove element
+3. Access element
+4. Update element
+5. Traverse element
+
+COMMON ARRAY METHODS
+
+push()
+- Adds element at the end of array.
+
+pop()
+- Removes element from the end.
+
+shift()
+- Removes element from the beginning.
+
+unshift()
+- Adds element at the beginning.
+
+slice()
+- Returns a portion of the array.
+
+splice()
+- Adds or removes elements from array.
+
+indexOf()
+- Returns index of an element.
+
+includes()
+- Checks if element exists.
+
+join()
+- Converts array to string.
+
+reverse()
+- Reverses the array.
+
+sort()
+- Sorts the array elements.
+
+forEach()
+- Executes function for each element.
+
+map()
+- Creates new array after applying function.
+
+filter()
+- Returns elements that match condition.
+
+reduce()
+- Reduces array to a single value.
