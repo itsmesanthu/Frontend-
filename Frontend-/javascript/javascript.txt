@@ -712,11 +712,11 @@ Stock
 Category
 Rating
 
- OBJECT CREATION (Object Literal)
+ OBJECT CREATION 
    - An object is created using {}.
    - It contains key-value pairs.
    - Example:
-       name: "tanu"
+       name: "santhu"
        age: 21
  PROPERTIES OF OBJECT
    - Properties are data stored inside an object.
