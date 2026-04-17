@@ -81,8 +81,34 @@ arr3.unshift(100)
 arr3.unshift("ehhhhhh")
 console.log(arr3)
     //indexof
-let arr4=[10,30,40,50,60,70,80]
+let arr4=[10,30,40,50,60,70,80,10,20,30,40]
 console.log(arr4.indexOf(40))
 console.log(arr4.indexOf(70))
 console.log(arr4.indexOf(110))
-    
+    //lastindexof()
+console.log(arr4.lastIndexOf(10))
+console.log(arr4.lastIndexOf(70))
+    //join()
+let arr5=["hi",11,"hello","y",false]
+console.log(arr5.join())
+console.log(arr5.join(" "))
+console.log(arr5.join("+"))
+    //includes()
+console.log(arr5.includes("hi"))
+console.log(arr5.includes("y"))
+console.log(arr5.includes("bye"))
+    //reverse()
+console.log(arr1.reverse())
+console.log(arr2.reverse())
+console.log(arr3.reverse())
+    //slice()
+let arr6=["hi",true,100,"raj","y",false]
+console.log(arr6)
+console.log(arr6.slice(3))
+console.log(arr6.splice(0,5))
+console.log(arr6)
+    //splice()
+let num=[1,2,3,4,5,6,7,8,9,10]
+let spliced=num.splice(3,4)
+console.log("spliced Array"+spliced)
+console.log("Original array After splicing"+num)

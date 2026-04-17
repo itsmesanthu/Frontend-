@@ -937,15 +937,19 @@ COMMON ARRAY METHODS
 
 push()
 - Adds element at the end of array.
+- when we need to push any data to na array we use push method .push() always appends the ena of the array.
 
 pop()
 - Removes element from the end.
+- array.pop()
 
 shift()
 - Removes element from the beginning.
+- array.shift()
 
 unshift()
 - Adds element at the beginning.
+- when we need to push rhe data to the beginningof the array.we use the .unshift()
 
 slice()
 - Returns a portion of the array.
@@ -967,15 +971,44 @@ reverse()
 
 sort()
 - Sorts the array elements.
+-let variable=array_name.sort() or let variable =array_name.sort(()=>{})
 
 forEach()
 - Executes function for each element.
+- if we want to access each and every element of an array we are using forEach() .forEach() will not return any value it will not alter original array
+- array_name.forEach((element,index){console.log(element +" "+index)})
 
 map()
 - Creates new array after applying function.
+- map() should be return some value returned value always added in new array map() will not after original array
+- let variable = array_name.(call back)
 
 filter()
 - Returns elements that match condition.
+- it is used to filter element or data from the array based on certain condition filter callback function will return boolean value it will not alter original array it will create new array
+- let variable= array_name.filter(function(element,index){return <boolean>})
 
 reduce()
 - Reduces array to a single value.
+- it is used to reduce the array to one singl value reduce method is such a method which accepts a callback function as parameter (first parameter)(second parameter)initial value
+- let variable =array_name.reduce(call back,initial value)
+
+slice()
+- Whenever we need to extract particular element from array we can use slice() it will not alter the original array.
+- slice(startindex, endindex)
+
+splice()
+- Extraction start at the start index extract the length number of  element from the array in case splice() it also alter the original array
+- splice(start,length)
+
+toStrig()
+- the toString () return a string with array values separate by commas
+- array.toString()
+
+delete()
+- array element can be deleted using javascript operater delete using delete leves undefined holes in the array 
+- delete.array_name(variable_name) 
+
+isArray()
+- this isArray() method return true if an variable storing an array otherwise false
+- array.isArray(variable_name)
