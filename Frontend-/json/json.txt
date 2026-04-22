@@ -1,0 +1,129 @@
+<--JSON-->
+>json stands for java script object notation.
+>it is a lightweight data format used for storing and exchangeing data,especially between a server and a client(like in web apps)
+>json mainly used in web development, especially when a client(browser) communicates with a server(backend) though APIs
+
+What does JSON look likes?
+>it look like a ssimplifed version of javaScript objects, and it is written in key values pairs
+{
+    "name":"vikram",
+    "age":23,
+    "isStudent":true,
+    "skills":["javascript","Python","html"]
+}
+
+Where is JSON used?
+>sending data between frontend and backend
+(ex:react<->node.js)
+>APIs often use JSON format to send/receive data
+>storing config files(like package.json in node js,react.js)
+
+Why JSON?
+>easy to read and write
+>Language-independent(used in python,java etc.,)
+>Lighter and faster
+>Most modern APIs send and receive data in json
+
+Rules of JSON
+>data is written in key-value pairs
+>keys must be in double quotes
+>Data is seperated by commas
+>json objects are enclosed in curly braces{}
+>arrays are enclosed in square brackets[]
+
+Values can be:
+< string("hello")
+< Numbers(78)
+< Boolean(true,false)
+< Array([])
+< object([])
+< Null(null)
+
+Basic Structure of JSON:
+{
+    "name":"vikram",                            "name":a string
+    "age":23,                                   "age":a number
+    "isStudent":true,                           "isStudent":a boolean
+    "address":{                                 "address":a nested object 
+        "city":"delhi",                         
+        "pin":25678883
+    },
+    "skills":["javascript","Python","html"],    "skills":an array 
+    "phone":                                    "phone":a null value(means no data)
+}
+
+JSON Array example:
+{
+“students”:[
+{
+“name”:”Amit,
+“age”:22
+},{
+“name”:”Rahul,
+“age”:24
+},{
+“name”:”Sneha,
+“age”:23
+}
+]
+}
+
+JSON in API Response Example:
+async function funt() (
+// Fetch the data from the URL
+Ist response avait fetch('https://jsonplaceholder.typicode.com/todos/1');
+// Convert the response to-2508 lat joonDetaalt response.Jean();
+// Log the 3508 data
+console.log(Jaanbeta);
+// You can also assign jsonData to a variable if you want to use it later
+let result jsonData;
+// Log the result
+console.log(result);)
+// Call the async function
+Furs();
+
+JSON vs JavaScript Object:
+            JSON                                     JavaScript Object
+
+Format:      Data Format                               Programming Object
+
+Keys:   Must be in "double quotes"                        Quotes Optional
+
+Data Types:    Limited                                      Many Types
+
+Functions:    Not Allowed                                     Allowed
+
+Usage:      Data Transfer                              Programming Logic
+
+File Type:      json                                            Js
+
+JSON Methods in javaScript:
+>JavaScript provides two important methods
+< JSON.stringify()
+< JSON.parse()
+
+JSON.stringify():
+>Converts JavaScript object→ JSON string
+
+Syntax:
+    JSON.stringify(object)
+
+Example:
+const user={
+    name:"virat",
+    age: 36,
+    city: "delhi",
+};
+const JsonData= JSON.stringify(user);
+console.log(jsonData);
+
+JSON.parse():
+>Converts JSON string → JavaScript object
+
+Syntax:
+    JSON.parse(isonString)
+
+Example:
+const jsonData = '{"name": "Virat", "age":36}';
+const obj = JSON.parse(jsonData);
+console.log(obj.name);
