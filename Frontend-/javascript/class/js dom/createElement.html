@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example to create web elements dynamically</h1>
+ <script>
+    let btn=document.createElement('button')
+    btn.innerHTML="Dynamic button"
+
+    let body=document.body
+    body.appendChild(btn)
+
+    let pre=document.createElement('pre')
+    pre.textContent="welcome to js class"
+    body.appendChild(pre)
+
+ function OrderedList(name1,name2,name3,name4){
+       let ol=document.createElement('ol')
+    let li1=document.createElement('li')
+    let li2=document.createElement('li')
+    let li3=document.createElement('li')
+    let li4=document.createElement('li')
+    li1.textContent=name1
+    li2.textContent=name2
+    li3.textContent=name3
+    li4.textContent=name4
+    ol.appendChild(li1)
+    ol.appendChild(li2)
+    ol.appendChild(li3)
+    ol.appendChild(li4)
+    body.appendChild(ol)
+ }
+ OrderedList("Riya", "Priya", "Sonia", "virat")
+ OrderedList("Alice", "Bob", "Charlie", "David")
+ OrderedList("Eve", "Frank", "Grace", "Henry")
+function unOrderedList(name1,name2,name3,name4){
+       let ul=document.createElement('ul')
+    let li1=document.createElement('li')
+    let li2=document.createElement('li')
+    let li3=document.createElement('li')
+    let li4=document.createElement('li')
+    li1.textContent=name1
+    li2.textContent=name2
+    li3.textContent=name3
+    li4.textContent=name4
+    ul.appendChild(li1)
+    ul.appendChild(li2)
+    ul.appendChild(li3)
+    ul.appendChild(li4)
+    body.appendChild(ul)
+ }
+ unOrderedList("Riya", "Priya", "Sonia", "virat")
+ unOrderedList("Alice", "Bob", "Charlie", "David")
+ unOrderedList("Eve", "Frank", "Grace", "Henry")
+ function OrderedList() {
+let body = document.body;
+
+let ol = document.createElement('ol');
+
+let li1 = document.createElement('li');
+li1.textContent = "HTML";
+
+let li2 = document.createElement('li');
+li2.textContent = "CSS";
+
+let li3 = document.createElement('li');
+li3.textContent = "JavaScript";
+
+let li4 = document.createElement('li');
+li4.textContent = "React";
+
+let nestedOl = document.createElement('ol');
+
+let subLi1 = document.createElement('li');
+subLi1.textContent = "Sub Item 1";
+
+let subLi2 = document.createElement('li');
+subLi2.textContent = "Sub Item 2";
+
+nestedOl.appendChild(subLi1);
+nestedOl.appendChild(subLi2);
+
+li2.appendChild(nestedOl);
+
+ol.appendChild(li1);
+ol.appendChild(li2);
+ol.appendChild(li3);
+ol.appendChild(li4);
+
+body.appendChild(ol);
+
+
+}
+
+OrderedList();
+
+ </script>
+</body>
+</html>

@@ -1012,3 +1012,248 @@ delete()
 isArray()
 - this isArray() method return true if an variable storing an array otherwise false
 - array.isArray(variable_name)
+=========================
+JAVASCRIPT STRING
+=========================
+<--Java Scripts Strings-->
+>collection of characters enclosed with in quotes(single/double) is considered to be string
+
+<--String Concatenation-->
+>combining one or more strings together is called as concatenation in order to cocat 2 strings we should take the help of + operators.
+ var firstname="virat"
+ var lastname="kholi"
+ console.log(firstname+" "+lastname)
+
+ <--How to find the length of a given string?
+ >to find the length of a given strings we use length property
+ let city="Bangalore"
+ console.log(city.length)
+
+ <--String Methods-->
+ 1.charAt()
+ 2.toLowerCase()
+ 3.toUpperCase()
+ 4.slice()
+ 5.substring()
+ 6.replace()
+ 7.replaceAll()
+ 8.trim()
+ 9.concat()
+
+1.charAt():
+.whenever from a string if we need to extract a specific character we use charAt()
+var str="hello world"
+console.log(str.charAt(4))
+
+2.toLowerCase():
+.all the characters of the string will be converted to lower case.
+    1.let str="HELLO WORLD"
+    2.console.log(str.toLowerCase())
+
+3.toUpperCase():
+.all the characters of the string will be converted to upper case.
+    var str-"hello world"
+    console.log(str.toUpperCase())
+
+4.substring():
+.its almost similar to slice(). the difference between substring and slice() is substring doesn't support -ve indedxes.
+<--SELECTION OR CONTROL STATEMENT-->
+<>we can control the execution of the program using control or selection statements. 
+we can execute certain set of statements only if certain condition become true.
+
+<--types-->
+1.if
+2.if else 
+3.else if
+4.switch
+5.ternary operator
+
+1.if:
+syntax:
+  if(condition){
+    //set of code
+  }
+
+2.if else:
+syntax:
+  if(condition){
+    //set of statements
+  }
+else{
+  //set of statements
+}
+
+3.else if:
+syntax:
+  if(condition){
+
+  }
+  else if(condition){
+
+  }
+  else{
+
+  }
+
+4.switch:
+syntax:
+  switch(){
+    case"value":{
+      //set of statements
+      //break;
+    }
+    case :value":{
+      //set of statements
+      //break;
+    }
+    default:{
+      //set of statements
+    }
+  }
+
+5.ternary operator:
+syntax:
+condition?//true statement: //false statement
+
+<--LOOPS-->
+<>loops are used to complete repetitive tasks easily instead of manually repeating the tasks we must take advantage of loops.
+
+<--types-->
+1.for loop
+2.while loop
+3.do while loop
+4.for in loop
+5.for of loop
+
+1.for loop:
+syntax:
+for(variable integer;condition;increment/decrement)
+{
+  //sey of statements
+}
+
+2.while loop:
+syntax:
+while(condition){
+  //set of statements increment/decrement
+}
+
+3.do while loop:
+syntax:
+do{
+  //set of statements increment/decrement
+}
+while(condition)
+
+4.for in loop:
+syntax:
+for(variable in object_name){
+  //set of statements
+}
+
+5.for of loop:
+syntax:
+for(variable of arrguments)
+{
+  //set of statements
+}
+<--nan (not a number) operators-->
+<>in java is a special value used in programming and mathematics to represent a value that is undefined or cannot be represented as a valid number.
+
+What does NAN occur?
+<>when you perform mathematical operations that doesn't return a valid number.
+to check the given value is nan or not
+
+isNAN():
+<>it tries to convert the value to number before checking
+
+number.is.NAN():
+<>checks strictly if the value is actually NaN value
+Ex:
+isNAN("abc")
+number.isNan
+
+<---DOM(document object model)--->
+<>dom is the interface between javascript and browser javascript in order to communicate with the browser takes help of dom
+<>dom is an tree like structure
+
+main uses of dom:
+1.allow us to make js interact with browser
+2.we can write js to create, modify and delete html elements 3.we can dynamically add styles, classes and attributes to the html elements
+4.dom is very complex api(application programming interface) which contains lots or methods and properties which help us to interact with browser
+
+why dom is created?
+<> using javascript we can manipulate the html document so that we can create dynamic user interface
+
+dom manipulation:
+<>how to access dom node (html element)
+<>how to add new html element
+<>how to remove existing html element
+<>how to change content or atributes of html elements
+<> to perform above operation browser is providing us predefined objects and functions called dom api
+
+Dom methods:
+1.document.write()
+2.document.head
+3.document.body
+4.document.URL
+5.document.getElmentByld()
+6.document.getElementsByClassName()
+7.document.getElementsByTagName()
+8.document.getElementsByName()
+9.document.querySelector()
+10.document.querySelectorAll()
+11.document.createElement()
+12.remove()
+13.getAttribute()
+14.setAttribute()
+15.document.title
+
+1.document.write():
+<>it helps us write some text directly to the html document.
+        document.write("hii hello good morning")
+
+2.document.head:
+<>it helps to access enitre head section of the html document 
+        var head=document.head
+        console.log(head)
+
+3.document.body:
+<>it helps to access enitre body section of the html document
+        var body=document.body 
+        console.log(body)
+
+4.document.url:
+<>it helps to access URL address of the html document
+        var url=document.URL
+        console.log(url)
+
+5.document.title:
+<>it helps to access the title of the webpage
+        var title=document.title
+        console.log(title)
+
+6.document.getElementById():
+<>its used to find the elements on the webpage based on the id attribute. it will return single element which matches with id value.
+ex:
+<h1 id="one">welcome to pentagonspace</h1> 
+<p id="two*></p>
+<button onclick="Change()">Click here</button>
+function Change(){ 
+    var hiref=document.getElementById('one') 
+    hiref.innerHTMLa"Thank you for visting
+}
+    var prefadocument.getElementayId('two') 
+    pref.textContent="welcome to javascript class
+    
+Difference b/w textContent and innerHTML
+
+innerHTML
+if we have any html tags present while using inner html then inner html property recognizes the html tags.
+    var h2ref=document.getElementById('three') 
+    h2ref.innerHTML="<i>hello good morning</i>"
+
+textContent
+if we have any html tags present while using textContent will not recognises and it will print html tags as it is
+    var p1ref=document.getElementById('four') 
+    piref.textContent="<i>hello good morning</i>"

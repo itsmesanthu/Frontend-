@@ -1,0 +1,29 @@
+//remove()//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id=""one>welcome to js class</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio labore tempora illo dolorum vitae nobis. 
+        Dolorem, iure ex eum distinctio eos laboriosam odit id quam temporibus error omnis? Quos?</p>
+    <script>
+        let btn=document.createElement('button')
+        btn.textContent="Dynamic button"
+
+        let body=document
+        body.appendChild(btn)
+
+        let h3ref=document.createElement('h3')
+        h3ref.innerHTML="<u>Example for don methods</u>"
+        body.appendChild(h3ref)
+
+        let h1ref=document.getElementById('one')
+        h1ref.remove()
+        btn.remove()
+    </script>
+</body>
+</html>

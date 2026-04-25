@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>username</label><input type="text" name="username" placeholder="hello">
+    <label>password</label><input type="text" name="password" placeholder="Faaaa" class="o">
+    <br><br>
+    <label>username</label><input type="text" name="username" >
+    <label>password</label><input type="text" name="password" class="o">
+    <button onclick="change()">submit</button>
+    <h1>Dhee coding lab</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates 
+        facere sed ipsum aliquam corporis consequuntur vel omnis atque libero est 
+        laborum quae, cupiditate ea fugit magni sunt similique. Aliquid.</p>
+    <script>
+        let inputref1=document.getElementsByName("username")
+        console.log(inputref1)
+        console.log(inputref1[1])
+        inputref1[0].style.backgroundColor="green"
+        inputref1[1].style.border="5px solid red"
+        function change(){
+            let inputref2=document.getElementsByName("password")
+            console.log(inputref2)
+            console.log(inputref2[1])
+            inputref2[0].style.border="40px solid yellow"
+            inputref2[1].style.border="40px solid yellow"
+        }
+   </script>
+</body>
+</html>

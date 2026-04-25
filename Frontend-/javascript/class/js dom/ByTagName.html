@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>username</label><input type="text" name="username" placeholder="hello">
+    <label>password</label><input type="text" name="password" placeholder="Faaaa" class="o">
+    <br><br>
+    <label>username</label><input type="text" name="username" >
+    <label>password</label><input type="text" name="password" class="o">
+    <button onclick="change()">submit</button>
+    <h1>Dhee coding lab</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptates 
+        facere sed ipsum aliquam corporis consequuntur vel omnis atque libero est 
+        laborum quae, cupiditate ea fugit magni sunt similique. Aliquid.</p>
+    <script>
+        let labelref=document.getElementsByTagName("label")
+        console.log(labelref)
+        labelref[0].innerHTML="Email"
+        labelref[2].textContent="email"
+        labelref[1].style.color="green"
+        labelref[1].style.textDecoration="underline wavy red"
+        let inputref=document.getElementsByTagName("input")
+        console.log(inputref)
+        for(var data of inputref){
+            data.style.border="5px solid blue"
+        }
+        let h1ref=document.getElementsByTagName("h1")
+    console.log(h1ref)
+    h1ref[0].style.color="orange"
+    </script>
+</body>
+</html>

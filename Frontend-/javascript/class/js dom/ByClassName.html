@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, 
+        tempore facere laborum deleniti pariatur tempora nesciunt libero fugiat obcaecati voluptate quas nihil dolores modi recusandae, sunt molestias. Molestiae, voluptatum porro!</p>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe, id vitae voluptates molestias architecto sunt adipisci ab ea? Natus, 
+        consequatur? Soluta voluptate commodi nostrum dolores, assumenda voluptates temporibus voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <script>
+        let p1ref=document.getElementsByClassName("p1")
+        console.log(p1ref)
+        for(var x of p1ref){
+            x.innerHtml="welcome to Dhee coding lab"
+            x.style.fontFamily="cursive"
+            x.style.fontsize="xx-large"
+        }
+        p1ref[0].style.color="blue"
+        p1ref[1].style.backgroundcolor=" 50px yellow"
+        p1ref[2].style.border="5px dotted orange"
+    </script>
+</body>
+</html>
