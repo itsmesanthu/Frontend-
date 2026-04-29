@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>example with event delegation</h1>
+    <div id="parent">
+        <button id="btn1">click 1</button>
+        <button id="btn2">click 2</button>
+        <buttomn id="btn3">click 3</button>
+        <button id="btn4">click 4</button>
+    </div>
+    <script>
+        let parent = document.getElementById("parent");
+        parent.addEventListener("click", (event) => {
+            if (event.target.tagName === "BUTTON") {
+                alert("button clicked is " + event.target.id)
+            }
+        })
+    </script>
+</body>
+</html>

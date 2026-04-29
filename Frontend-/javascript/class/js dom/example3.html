@@ -107,6 +107,18 @@
   table.style.textAlign="center"
   table.style.margin="20px auto"
 
+function ShoworHidePassword(){
+let passwordref=document.getElementById('password')
+let btnref=document.getElementById('btn')
+if(passwordref.type==='password'){
+    passwordref.type="text"
+    btnref.innerHTML="Hide Password"
+}
+else{
+    passwordref.type="password"
+    btnref.innerHTML="Show Password"
+}
+}
     }
 </script>
 </body>

@@ -9,17 +9,45 @@
     <center>
         <form action="">
         <h1>student Registration</h1>
-        <label>student name: </label><input type="text" placeholder="entter the student name "><br>
-        <label>id cord</label><input type="file" placeholder="choose th file">id cord phton file<br>
+        <table border="1">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>course</th>
+            </tr>
+            <tr>
+                <td>santhosh gp</td>
+                <td> 21</td>
+                <td>be in cse</td>
+            </tr>
+        </table>
+        <label>name: </label><input type="text" placeholder="entter the  name "><br>
+        <label>email:</label><input type="email" placeholder="enter your mail"><br>
+        <label >password :</label><input type="password" placeholder="entere your password"><br><br>
         <label>Gender</label><br>
         <input type="radio" name="Gender">Male
         <input type="radio"name="Gender">female <br><br>
-        <select><label >hobbies</label>
-            <option value="">select your hobbies</option>
-            <option value="reading book">reading book</option>
-            <option value="sports">sports</option>
-            <option value="games">games</option>
-        </select>
+        <p>Select your hobbies:</p>
+        <input type="checkbox" value="reading">Reading<br>
+        <input type="checkbox" value="traveling">Traveling<br>
+        <input type="checkbox" value="gaming" checked>Gaming (Pre-selected)<br><br>
+        <label >Choose a Course:</label>
+        <select>
+        <option value="">--Please choose an option--</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        </select><br><br>
+        <input type="file" placeholder="choose the file">upload your picture<br><br>
+        <button>submit</button><br>
+        <p>kannada song</p>
+        <video controls>
+            <source src=" https://www.youtube.com/watch?v=CxX1mzjTOsY&list=RDNCfEfqLyuLc&index=3">
+        </video><br>
+        <p>audio</p>
+        <audio controls>
+            <source src="tera-toh-game-bajana-padega-audio-meme-download.mp3">
+        </audio>
         </form>
     </center>
 </body>

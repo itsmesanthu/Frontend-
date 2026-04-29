@@ -1,0 +1,43 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Submit</button>
+    <select name="" id="dropdown">
+        <option value="one">one</option>
+        <option value="two">two</option>
+        <option value="three">three</option>
+        <option value="four"></option>
+        <option value="five"></option>
+    </select>
+    <script>
+        document.getElementById('btn').addEventListener('click',(event)=>(alert("button clicked")))
+        document.getElementById('dropdown').addEventListener('change',(event)=>(alert("the value is"+event,target,value)))
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="child">Click Me</button>
+    </div>
+    <script>
+        document.getElementById('child').addEventListener('click',(event)=>{
+            alert("Child button clicked")
+        })
+        document.getElementById('parent').addEventListener('click',(event)=>{
+            alert("Parent div clicked")
+        })
+    </script>
+</body>
+</html>

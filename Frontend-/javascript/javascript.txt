@@ -1257,3 +1257,29 @@ textContent
 if we have any html tags present while using textContent will not recognises and it will print html tags as it is
     var p1ref=document.getElementById('four') 
     piref.textContent="<i>hello good morning</i>"
+
+
+adding events through javascript
+ > we can listen to events through Javascript by using addEventlistener()
+ > addEventListener() accepts 2 parameters
+
+ 1.type of event(string) excclick change etc 
+ 2.caliback function
+
+event delegation
+  > event delegation is a technology in javascript where instead of adding event listener to individul child element , we can add a single event lister to a parent element
+event bubbling
+  >Event bubbling is a mechanism in JavaScript where an event starts from the deepest target element means the event trigger first on child element or clicked element and then moves upward to its parent elements
+    >In event bubbling event direction will be from child to parent
+>event capturing
+
+    - The capturing phase is the first phase of event propagation in the DOM.
+    - Event capturing means the event is triggered first of an outermost or parent element and then it goes to the innermost or child element.
+    - To perform event capturing for the add event listener along with the event type and the callback function we have to pass a third argument as true
+
+syntax:
+
+    - element.addEventListener(event, function, true);
+        or
+    - element.addEventListener(event, function, (capture true));
+    - event capturing direction will be from parent to child
