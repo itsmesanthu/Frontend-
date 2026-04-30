@@ -1,2 +1,25 @@
 var date=new Date()
 console.log(date)
+var date=new Date()
+console.log(date)
+
+var currentdate=date.getDate()
+console.log(currentdate)
+
+var day=date.getDay()
+console.log(day)
+
+let month=date.getMonth()
+console.log(month)
+
+let year=date.getFullYear()
+console.log(year)
+
+var hour=date.getHours()
+console.log(hour)
+
+var minute=date.getMinutes()
+console.log(minute)
+
+var second=date.getSeconds()
+console.log(second) 

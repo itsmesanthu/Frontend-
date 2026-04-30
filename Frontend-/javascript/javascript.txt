@@ -1283,3 +1283,24 @@ syntax:
         or
     - element.addEventListener(event, function, (capture true));
     - event capturing direction will be from parent to child
+
+Math object
+    > math is an inbuilt object in javascript which can be uesd to perform some specific
+    Math is an inbuilt object in JavaScript which can be used to perform
+        console.log(Rath.PI)//print value of pi
+        console.log(Math.sgrt (49))//print the square rost of mumber
+        console.log(Math.pow (9,2))//print the power of number
+        console log(Math.round(5.6))//round to nearest mumber
+        console.log (Rath.floor(2.5))//floor it to nearest intager value
+        console.log (Rath.trunc(239389.48727))//it will print intagar value
+        //and remove the decimal value
+        console.log(Math.xign(-93819))
+        console.lng(Rath.sign(1773))//print the mumber is megative pr positive
+        console.log (Rath.random())//print the random mumbers
+Date Object
+
+    When ever we need to know about the date we should use date object gives information regarding Day, Month, Year, Minutes, Hours Seconds, and Time Zone
+    months->0->Jan 11->Dec
+    week->0->Sunday 6->Saturday
+    var date=new Date() console.log(date)
+    
