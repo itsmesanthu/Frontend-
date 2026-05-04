@@ -1303,4 +1303,34 @@ Date Object
     months->0->Jan 11->Dec
     week->0->Sunday 6->Saturday
     var date=new Date() console.log(date)
-    
+ Template literals
+    >Template literals (also called template strings) are a way to work with strings in JavaScript using backticks () instead of single (") or double
+    ("")quotes.
+    >They were introduced in ES6 (ECMAScript 2015)
+    >String Interpolation: Embed expressions using ${}
+    > Multi-line Strings: Write strings across multiple lines naturally
+Spread operator
+    >...<object names>
+        OR
+    >...<Array name>
+    > It is used to copy properties of one object into another object and it is used to copy elements of one array into another array.
+Destructing of array or object
+    > it is technology in javascript to unpack properties or elements format object or array and assigning variable
+
+Rest parameters
+    >Rest parameter allow a function to accepts an indefinite number of arrguments as a arrayand also it can applied for array or object to store elements or properties
+    syntax:
+
+Hoisting
+    • Holsiting is is default behavior of moving variable and function declarations to the top of their scope before execution
+    • Works with var (hoisted but undefined) and function declarations (hoisted with definition)
+    • let and const are hoisted but remain in the temporal dead zone
+    • Both varibales and function are hoisted but behave differently
+How it works internally?
+    when JavaScript engine starts
+        1.First phase(memory creation phase)
+            • It scans the code
+            • It creates memory space for variables and function variable declarations are set to undefined
+            • Function declaration are fully hoisted (entire function definition)
+        2.second phase
+            • code runs line by line
