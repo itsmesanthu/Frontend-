@@ -1334,3 +1334,33 @@ How it works internally?
             • Function declaration are fully hoisted (entire function definition)
         2.second phase
             • code runs line by line
+Closures in JavaScript
+    • It is a technique to access of outer function variable inside inner function
+    • It is function to define function inside another function
+    • A closures can be defined as a JavaScript feature in which the Inner function has access to the outer function varlable, Java Script, every time a dosure is created with the creation of function
+The closures has three scope claims listed as follows
+    1. access to Its own scope
+    2 access to the variable of the outer function
+    3. access to the global variables
+    syntax:
+        function outer(){
+        //...................
+        //...................
+        function inner(){
+        //...................
+        }
+        returng inner
+        }
+Scope in Javascript
+    • scope refers to the accessibility, scope can be used for functions and variables.
+    There are 3 scopes in JavaScript
+        1 global scope
+        2.function scope
+        3. Lexical scope
+    global scope
+        • If any functions or variables or class not defined inside the block(0) then they are said to be in global scope
+    function scope
+        • Any thing which is defined inside function scope those thing we can access only inside the function scope
+    Lexical scope
+        •⁠  ⁠Lexical scope means that scope is determined by where variables and blocks are written in the code means inner scopes can access
+
