@@ -1258,7 +1258,139 @@ if we have any html tags present while using textContent will not recognises and
     var p1ref=document.getElementById('four') 
     piref.textContent="<i>hello good morning</i>"
 
+7.document.getElementsByName():
+<>its used to find the elements on the webpage based on the name attribute. it returns nodelist it is nothing but array of node or html elements
+ex:
+        <label>username</label><input type="text" name="username" >
+        <label>password</label><input type="text" name="password">
+    <br><br>
+    <label>username</label>cinput types"text" namen"username"> 
+    <label>password</label><input type="text" typen"text" name="password">
+    <h1>pentagonspace</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, quod ad
 
+        var username=document.getElementsByName('username') 
+        console.log(username)
+        var password=document.getElementsByName('password')
+        console.log(password)
+
+8.document.getElementsByTagName():
+<>this method used to select all elements with a specified tag name from the document.
+ex:
+    <label>username</label><input type="text" name="username">
+    <label>password</label><input type="text" name="password">
+    <br><br>
+    <label>username</label><input type="text" name="username">
+    <label>password</label><input type="text" name="password">
+    <button onclick="change()">submit</button>
+    <h1>Dhee coding lab</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque sapiente quisquam odio, eius corrupti exercitationem magnam illo libero, 
+        rem earum sed quod vitae ea voluptatem? Nesciunt nulla aperiam animi!</p>
+    <script>
+    let labelref=document.getElementsByTagName("label")
+    console.log(labelref)
+    labelref[0].innerHTML="Email"
+    labelref[2].textContent="Email"
+    labelref[1].style.color="green"
+    labelref[1].style.textDecoration="underline wavy red"
+
+    let inputref=document.getElementByTagName("input")
+    console.log(inputref)
+    for(var data of inputref){
+        data.style.border="5px solid blue"
+    }
+    let h1ref=document.getElementsByTagName("h1")
+    console.log(h1ref)
+    h1ref[0].style.color="orange"
+    </script>
+    
+9.document.querySelector():
+<>query selector() returns the first element in the document that matches the specific selector or group of selector if no matches are found then it will return null.
+<>As a query we can pass class name, ID name, and tagname
+ex:
+    <h1>pentagonspace</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adi
+    <h1 >hello everyone</h1>
+    <h4 class="four">this is the heading</h4>
+    <h4 class="four">this is h4</h4>
+    <p id="one">Lorem ipsum, dolor sit amet conse
+    <p id="one">Lorem ipsum dolor sit amet consec
+
+    var res-document.querySelector('h1')
+    console.log(res)
+    var res1-document.querySelector('p)
+    console.log(res1)
+    var res2-document.querySelector(#one)
+    console.log(res2)
+    var res3-document.querySelector(. four)
+    console.log(res3)
+
+10.document.querySelectorAll():
+<>it returns all the elements which matches the query as an array.
+ex:
+    <h1>pentagonspace</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adi
+    <h1 >hello everyone</h1>
+    <h4 class="four">this is the heading</h4>
+    <h4 class="four">this is h4</h4>
+    <p id="one">Lorem ipsum, dolor sit amet conse
+    <p id="one">Lorem ipsum dolor sit amet consec
+
+        var result=document.querySelectorAll('p') 
+        console.log(result) 
+        var result1=document.querySelectorAll('#one') 
+        console.log(result1)
+
+11.document.createElement():
+<>we can create web elements dynamically using createElement() in order to dynamically append created element to webpage we can take the help of appendChild()
+ex:
+    var body=document.getElementById('body')
+    var para=document.createElement('p') 
+    para.innerHTML="i am paragraph created dynamically" 
+    body.appendChild(para)
+    
+    var button=document.createElement('button') 
+    button.textContent="dynamic button" 
+    body.appendChild (button)
+
+12.remove():
+<>by using remove() we can remove web elements dynamically from html document
+ex:
+    <body id="body"> 
+    <p id="one">Lorem ipsum dolor sit am</p>
+
+var pref=document.getElementById('one') 
+pref.remove()
+
+13.setAttribute():
+<>the setAttribute(name, value) method used to set a new attribute or change the attribute value of exisitng attribute on an html element
+ex:
+    <input id="input">
+    <input type="radio" id="one">option1 
+    <img id="two" src="https://images.hdqwalls.com/
+
+    let inputref=document.getElementById('input') 
+    inputref.setAttribute('type, "number") 
+    let inputref1-document.getElementById('one') 
+    inputref1.setAttribute('type', 'checkbox')
+
+    let aref-document.createflement('a')
+    aref. innerHTML="Youtube
+    aref.setAttribute('href, "https://ww.youtube.com")
+    let body document.body
+    body.appendChild(aref)
+
+14.getAttribute():
+<>the getAttribute(name) method retrieves the value of a specified attribute from an html element
+ex:
+    <input id="input">
+    <input type="radio" id="one">option1 
+    <img id="two" src="https://images.hdqwalls.com/
+
+    let ref1=document.getElementById('one') 
+    let res=ref1.getAttribute('type') console.log(res)
+    let imgref=document.getElementById('two') 
+    let result= imgref.getAttribute(src') console.log(result)
 adding events through javascript
  > we can listen to events through Javascript by using addEventlistener()
  > addEventListener() accepts 2 parameters
@@ -1303,6 +1435,26 @@ Date Object
     months->0->Jan 11->Dec
     week->0->Sunday 6->Saturday
     var date=new Date() console.log(date)
+
+<>When ever we need to delay the execution or we need call function again and again we use timers.
+Timers as two types they are:
+1.setTimeout()
+<>setTimeout() accepts 2 parameters
+    1.callback function
+    2.the time in milliseconds
+2.setinterval():
+<>setinterval() also accepts 2 parameters
+    1.callback()
+    2.the time in milliseconds
+
+what is the difference between setTimeout() and setinterval()?
+<>The main difference between the setTimeout() and setinterval() is that the setTimeout() will execute the callback() 
+only once where as setinterval() keeps on triggering the callback() reguraly after the give interval of time (unless you stop it)
+
+How to stop set interval()?
+<>when we need to stop the setinterval() we should useclearinterval() every setinterval() will return one id we need that 
+id in order to clear the interval clearinterval() accepts a number as a parameter.
+
  Template literals
     >Template literals (also called template strings) are a way to work with strings in JavaScript using backticks () instead of single (") or double
     ("")quotes.
@@ -1364,3 +1516,38 @@ Scope in Javascript
     Lexical scope
         •⁠  ⁠Lexical scope means that scope is determined by where variables and blocks are written in the code means inner scopes can access
 
+This keyword
+>in javascript this is a special keyword which refers to current object.
+>this is a special keyword in JavaScript which will point to current object
+>we can change reference of this keyword by using three predefined
+functions they are.
+    1.call()
+    2.apply()
+    3.bind()
+
+<--Difference b/w call, apply, bind-->
+1.call()
+    calls a function immediately
+    passes agruments one by one
+
+2.apply()
+    also calls a function immediately
+    passes agruments array
+
+3.bind()
+    does not call function immediately 
+    returns a new function with this bound 
+    useful for creating a copy of the function 
+    with fixed this and arguments
+
+<--try/catch/finally-->
+>whenever we feel some part of code may cause problems we must enclose the part of code with in the try.
+>so if any problems occur try is designed in such a way that it throws the exception object outside which later will be caught by the catch() by using try-catch syntax we can avoid our programs getting terminated abruptly.
+
+<--Deep Copy-->
+>A deep copy means creating a new completely independent copy of an object (or array), including all of its nested object/arrays.
+>In deep copy all the levels of the original object are copied the new object does not share references with the original changes made in the copy do not affect the original and vice versa.
+
+<--shallow copy-->
+>a shallow copy is a copy of an object where only first level of the object is duplicated but the nested(inner) objects or references are not copied, they are just referenced.
+    
