@@ -1541,13 +1541,63 @@ functions they are.
     with fixed this and arguments
 
 <--try/catch/finally-->
->whenever we feel some part of code may cause problems we must enclose the part of code with in the try.
->so if any problems occur try is designed in such a way that it throws the exception object outside which later will be caught by the catch() by using try-catch syntax we can avoid our programs getting terminated abruptly.
+    >whenever we feel some part of code may cause problems we must enclose the part of code with in the try.
+    >so if any problems occur try is designed in such a way that it throws the exception object outside which later will be caught by the catch() by using try-catch syntax we can avoid our programs getting terminated abruptly.
 
 <--Deep Copy-->
->A deep copy means creating a new completely independent copy of an object (or array), including all of its nested object/arrays.
->In deep copy all the levels of the original object are copied the new object does not share references with the original changes made in the copy do not affect the original and vice versa.
+    >A deep copy means creating a new completely independent copy of an object (or array), including all of its nested object/arrays.
+    >In deep copy all the levels of the original object are copied the new object does not share references with the original changes made in the copy do not affect the original and vice versa.
 
 <--shallow copy-->
->a shallow copy is a copy of an object where only first level of the object is duplicated but the nested(inner) objects or references are not copied, they are just referenced.
-    
+    >a shallow copy is a copy of an object where only first level of the object is duplicated but the nested(inner) objects or references are not copied, they are just referenced.
+
+Synchronous Programming
+    • A synchronous function is one that runs in a single thread and completes its execution before moving on to the next task.
+    • It will block other operations until the current task is completed.
+    • synchronous programming means code execute line by line, that is one task at at a a time time and each line waits for the previous line to complete before executing.
+Asynchronous Programming
+    • Asynchronous programming in js is a non-blocking execution model where long-running tasks can be executed in the background without blocking the main thread. Means while other operations can continue to run.
+    • Asynchronous programming is used with long-running tasks like network requests, file operations, timers, etc.
+note:
+• In js asynchronous programming execution take care by the event loop
+• Event loop is part of the js runtime environment it is not part of is engine
+• In is setTimeout and setinterval are the built-in functions that allow us to perform asynchronous operations.
+• but we can also use Promises, async/await for better handling of async code.
+• Asynchronous programming can be done by using timers, promises, async and await
+Promise in JavaScript
+    >These are the way to handle the asynchronous operations
+    > A promise is a JavaScript object that links producing code and consuming
+    code that represent a value may be available now or in the future or never
+The promise object can be in any 3 states
+            1.pending
+            2.fulfilled
+            3.reiected
+promises
+    |
+-----------------------------------------
+|                  |                   |
+fulfilled        pending            rejected
+|                                      |
+v                                      v
+resolve()                           reject()
+|                                      |
+v                                      v
+then()                              catch()
+Creating a Promise
+// create a promise using promise constructor take a function with two parameter resolve and reject. Here the promise will be either be resolved or it will be rejected.
+
+Handling promise result
+// we can use .then() method to handle the promise result. If any error occurs, then we use .catch() method to handle the result.
+
+
+Fetch()
+fetch is a method which works internally as a promise. fetch method is used to make a network request or to call an API in JavaScript.
+Fetch will return a promise in JavaScript.
+async and await
+
+I
+
+•async:
+    declare a function or method as asynchronous and can pause its execution to wait for completion of other process
+•await:
+    make a suspension point where execution may wait for the result of async function or methods
