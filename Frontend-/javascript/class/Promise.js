@@ -37,3 +37,20 @@ promDemo.then((result) => {
 }).catch((error) => {
     console.log(error)
 })
+function step(message, time){
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            console.log(message)
+            resolve()
+        }, time)
+    })
+}
+
+step("customer enters restaurant",1000)
+.then(()=>step("waitor takes order",1000))
+.then(()=>step("chief starts cooking",1000))
+.then(()=>step("food is ready",1000))
+.then(()=>step("waitor serves food",1000))
+.then(()=>step("customer starts eating",1000))
+.then(()=>step("customer pays the bill",1000))
+.catch((error)=>console.error("Error",error))
