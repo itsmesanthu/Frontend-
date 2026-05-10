@@ -1601,3 +1601,82 @@ I
     declare a function or method as asynchronous and can pause its execution to wait for completion of other process
 •await:
     make a suspension point where execution may wait for the result of async function or methods
+Event loop :
+    event loop is a mechanism in javascript that takes from web api or task queue and pushes to call stack when it is empty 
+    why we need event loop?
+            • Is is single threaded language but some time it needs to perform a long running task like fetching data from server or reading a file system if js 
+            would have performed these tasks on main thread it would have blocked the execution of other code so these task are taken care by event loop
+        note:
+            event loop is not part of js engine it is part of browser or node js runtime js engine it environme.
+Acc JS Code
+                              |
+                           JS Engine
+                              |
+                            Parser
+                              |
+                         Interpreter
+                              |
+                        Compiler (JIT)
+
+ -------------------------------------------------------------
+|                                                             |
+|                       JS Runtime                            |
+|                                                             |
+|   ------------------        -----------------------------   |
+|  |    Memory Heap  |      |         Call Stack         |   |
+|   ------------------        -----------------------------   |
+|                                                             |
+|                                                             |
+|                         Web API                             |
+|                                                             |
+|   ------------------      ------------------------------    |
+|  | Promise          |    | setTimeout()                |    |
+|  | callback         |    | setInterval()               |    |
+|  | async/await      |    | DOM events                  |    |
+|   ------------------      ------------------------------    |
+|                                                             |
+|   Micro task queue         Macro task queue                 |
+|                                                             |
+|                         Event Loop                          |
+|                                                             |
+ -------------------------------------------------------------
+
+                         Browser (Chrome)
+flow of event loop
+    1.so if a is task is a synchronous that uses only js engine and callback for execution
+    2.so in js heavy tasks or asynchronous tasks goto web api through event loop 3. event loop checks if a call stack is empty or not
+    4. if call stack is empty event loop pushes the microtask first to call stack for execution then runs macrotask next
+    5.if call stack is not empty event loop waits till it is empty
+    6.this process continues till all the tasks are executed.
+
+microtask queue
+    > micro task queue having higher priority in web api it hold the async task made by promises, callback, Async await and it always run before macrotask queue
+macrotask queue
+    > macro task queue having lower priority in web api it hold the async task made by setTimeout,setinterval,1/O operations and dom events it execute after microtask queue is empty
+
+what is web api?
+    >web api is a browser or nodejs provided api that helps js to perform
+    > asynchronous tasks like setTimeout, fetch api, dom events etc
+    > web api is not part of js engine it is part of browser or nodejs runtime environment
+    > synchronous --> browser-->js engine-->call stack->execution
+    > asynchronous ->browser->web apl-->event loop-->task queue-->call stack-->execution
+
+callback hell
+    >callback hell happens in js when you have multiple nested callbacks inside asynchronous function like setTimeout, api calls etc it makes code hared to read and hard to maintain
+    >It is old pattern to handle asynchronous function in new patter we are using promises async/await method.
+What is Web Storage?
+    Web Storage allows browsers to store data on the client side (user's browser).
+
+    There are 2 main types:
+        >local Storage
+        >session Storage
+<--Local Storage-->
+    >local storageis a type of browser storage that allows you to store key value pairs in the browser.
+    >the data is stored even when the browser is closed and reopened.
+    >share across tabs.
+
+<--session storage-->
+`    >session storage, on the other hands, is similar to local storage, but the data is only stored for the user's session.
+    >stores data only for one browser session.
+    >this means that the data is lost when the tab/windows is closed.
+    >only current tab`

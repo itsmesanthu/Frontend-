@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>tanu</h1>
+    <script>
+        //store data
+        localStorage.setItem("name", "Pavan");
+        //get data
+        const name = localStorage.getItem("name");
+        console.log(name);
+        //remove data
+       localStorage.removeItem("name");
+        //clear all
+        localStorage.clear();
+    </script>
+</body>
+
+</html>
