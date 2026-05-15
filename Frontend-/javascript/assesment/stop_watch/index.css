@@ -1,0 +1,17 @@
+*{
+    margin: 10px;
+    padding: auto;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+}
+.one{
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 10px black;
+    display: grid;
+    justify-content: center;
+    background-color: greenyellow;
+}
