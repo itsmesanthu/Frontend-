@@ -1,0 +1,52 @@
+            module 1
+        (indtroduction to react)
+• HTML (Hypertext Markup Language)
+    Basic Structure: HTML builds the skeleton of web pages by using tags to define elements like text, images, and links.
+
+• CSS (Cascading Style Sheets)
+    Design and Style: CSS controls how web pages look, allowing you to change colors, fonts, and layouts to make the site attractive.
+
+• JavaScript
+    Interactive Features: JavaScript makes web pages interactive, letting users do things like click buttons, fill out forms, and see changes without refreshing the page.
+
+What is React JS?
+    • React JS is an open-source JavaScript library developed and maintained by Facebook.
+    • It’s widely used for building user interfaces, especially for single-page applications and complex web interfaces.
+    • It breaks down a whole website into small, manageable pieces called components.
+    • It enables developers to create dynamic, responsive, and reusable UI components, enhancing the efficiency of the development process.
+Why React JS?
+    • Speed: React uses the Virtual DOM, allowing efficient updates and rendering, resulting in faster and more responsive user interfaces.
+    • Reusability: React follows a component-based approach where components can be reused. This leads to cleaner code, easier maintenance, and better collaboration among team members.
+    • Job Market: React has high demand. Companies like Netflix, Airbnb, Instagram, etc. use React.
+    • Rich Ecosystem and Tooling: React is supported by a vast ecosystem of libraries, tools, and frameworks that enhance its capabilities and help developers build robust applications more efficiently.
+About React JS
+    • It is a JavaScript library developed by Facebook in 2011. It has been released in 2013.
+    • It has been invented by Jordan Walke.
+    • Angular JS and Vue JS are the competitors for React.
+    • It has Component-Based Architecture, where the component can be reusable which helps in maintaining and organizing the code efficiently.
+    • React uses a Virtual DOM to optimize rendering, which improves performance.
+    • Unidirectional Data Flow: It means data flows in a single direction, from parent components to child components.
+Single Page Application (SPA)
+    •⁠  ⁠A Single Page Application (SPA) in React is a web application where the entire website loads only once in the browser. After that, different pages or content are updated dynamically without refreshing the whole page.
+What is the purpose of React JS?
+• React is used to create user interfaces.
+• React is used to create single-page applications with other libraries.
+• Using React, we can create static and dynamic web pages.
+Can we create an entire Frontend application using React?
+    To create frontend application with React?
+    UI + Other Libraries
+    Other Libraries:
+        Axios
+        Hooks
+        React Router DOM
+        React Icons
+        Redux
+    React is mainly used for building the UI (User Interface).
+    To create a complete frontend application, React is combined with other libraries for routing, API calls, state management, and icons.
+Advantages of React JS
+    • React is easy to learn and use.
+    • React learning curve is very small.
+    • React applications are very fast in performance.
+    • In React, we have Virtual DOM.
+    • React has component-based architecture.
+    • React community is large.
