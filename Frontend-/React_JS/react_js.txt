@@ -50,3 +50,149 @@ Advantages of React JS
     • In React, we have Virtual DOM.
     • React has component-based architecture.
     • React community is large.
+Difference between Angular JS and React JS
+|                |    Angular JS   |   React JS      |
+| -------------- | --------------- | --------------- |
+| Author         | Google          | Facebook        |
+| Developer      | Misko Hevery    | Jordon Walks    |
+| Latest Version | 16.0.3          | 19.0.0          | 
+| Language       | JS, HTML        | JSX             |
+| Rendering      | Client Side     | Server Side     |
+| Data Binding   | Bi Directional  | Uni Directional |
+| Dom            | Regular DOM     | Virtual DOM     |
+|AppArchitecture | MVC             | Flux            |
+| Routing        | Manual          | Modules Used    |
+Difference Between React JS and React Native
+*React JS* 
+    Released in 2013 
+    For Web Application
+    Executed on all Platforms
+    Uses JS and CSS lib for Animations
+    React router for navigating Web Pages
+    Uses HTML Tags
+    High Security
+*React Native*
+    Released in 2015
+    For Mobile Application
+    Platform Independent
+    Built in Animations
+    Built  in Navigator Library
+    Doesn’t
+    Lower Security Comparatively
+
+Working of React Application
+    - If we want to navigate from one page to another page in react the application will not send any request to server
+    - The page will not refresh in react. Without refreshing it will navigate from one page to another page
+    - We will get request from react and react only take care of all request
+    - It is also called as single page application.
+    - Because it has the concept called virtual dom. let's see dom interaction
+
+What is DOM?
+    - DOM(Document Object Model) is a tree like structure that represents your HTML elements in the browser
+    - This becomes a DOM tree like
+    - Changing or updating this structure directly (called real DOM manipulation) is slow especially for big applications
+working od react application:
+
++--------------------+                      +----------------------+
+|      CLIENT        |                      |        SERVER        |
+|--------------------|                      |----------------------|
+|      Browser       | ---- HTTP Request -->|   React App Hosted   |
+|  www.facebook.com  |                      |                      |
+|                    |<--- HTTP Response ---|   JS Files / Data    |
++--------------------+                      +----------------------+
+
+          CLIENT SIDE                          SERVER SIDE
+
+        Bundles of JS files get downloaded in the browser
+    - If we want to navigate from one page to another page in react the application will not send any request to server
+    - The page will not refresh in react. Without refreshing it will navigate from one page to another page.
+    - We will get request from react and react only take care of all request
+    - It is also called as single page application.
+    - Because it has the concept called virtual dom. let's see dom interaction.
+
+What is DOM?
+    - DOM(Document Object Model) is a tree like structure that represents your HTML elements in the browser
+    - This becomes a DOM tree like
+    - Changing or updating this structure directly (called real DOM manipulation) is slow especially for big applications
+
+ What is the Virtual DOM?
+    - The Virtual DOM is a copy of the real DOM kept in memory by react.
+    - It's a JavaScript object that mirrors the structure of the real DOM. But doesn't touch the screen immediately.
+
+React never updates the DOM directly. Instead it
+    - Creates a virtual version of the Ul
+    - Updates that virtual version when state or props change
+    - Compares it with the previous version
+    - Finds what changed
+    - Efficiently updates only those parts in the real DOM.
+
+When is the virtual DOM used?
+    •⁠  ⁠Every time something changes in your app (like a button click or input text change) React.
+    +------------------+        +------------------+        +------------------+
+    | User Interaction | -----> |   Virtual DOM    | -----> |   Original DOM   |
+    |------------------|        |------------------|        |------------------|
+    |      Client      |        | React compares   |        | Real webpage     |
+    | User clicks/type |        | changes here     |        | gets updated     |
+    +------------------+        +------------------+        +------------------+
+
+    Flow:
+    User Action --> Virtual DOM --> Original DOM Update
+    •⁠  ⁠Re-renders the component to create a new Virtual DOM
+    •⁠  ⁠React compares the new virtual DOM with the old virtual DOM to find what changed
+    •⁠  ⁠Calculates the minimum number of changes required
+    •⁠  ⁠Applies those changes to the real DOM
+
+Why is this important?
+Updating the real DOM is slow because
+    - It involves recalculating styles, layouts and reflows
+    - The entire page may be re-rendered unnecessarily
+
+React's virtual DOM makes updates faster and smoother by
+    - Avoiding unnecessary work
+    - Making Dom updates batched and optimized
+
++---------------------------+      +---------------------------+
+|        VIRTUAL DOM        |      |        ORIGINAL DOM       |
+|---------------------------|      |---------------------------|
+| Document                  |      | Document                  |
+|   └── HTML                |      |   └── HTML                |
+|       ├── Head            |      |       ├── Head            |
+|       │   ├── Title       |      |       │   ├── Title       |
+|       │   ├── CSS         |      |       │   ├── CSS         |
+|       │   └── JS          |      |       │   └── JS          |
+|       └── Body            |      |       └── Body            |
+|           ├── H1          |      |           ├── H2          |
+|           ├── p           |      |           ├── p           |
+|           └── button      |      |           └── button      |
++---------------------------+      +---------------------------+
+
+React Creates a virtual Dom in memory
+    •⁠  ⁠Instead of a manipulating the browser's Dom directly, React creates a virtual Dom in memory. Where it does all the necessary manipulating before making the changes in the Browser dom.
+    React Changes only what need to be change in original dom
+    •⁠  ⁠when user wants to change anything it will reflect in virtual dom The virtual dom will update the changes which is need in original dom.
+    This entire process is Reconciliation Process in React JS
+Reconciliation Process in React JS
+                RECONCILIATION
+
+   OLD Virtual DOM            NEW Virtual DOM
+          |                          |
+          |------ Compare ---------->|
+                    (DIFF)
+                         |
+                         v
+                 Changed Nodes Found
+                         |
+                         v
+                  Update Real DOM
+
+
+
+    Example:
+
+    OLD VDOM                     NEW VDOM
+    H1                           H2
+        |                            |
+    React compares both using DIFF algorithm
+    and updates only the changed part in Real DOM.
+    -The reconciliation process in React is the mechanism by which React determines what changes need to be made to the Real DOM in response to updates in the Virtual DOM.
+    -It involves comparing the current Virtual DOM representation of a component with its previous representation to identify the differences and efficiently update the Real DOM
