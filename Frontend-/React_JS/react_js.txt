@@ -195,4 +195,73 @@ Reconciliation Process in React JS
     React compares both using DIFF algorithm
     and updates only the changed part in Real DOM.
     -The reconciliation process in React is the mechanism by which React determines what changes need to be made to the Real DOM in response to updates in the Virtual DOM.
-    -It involves comparing the current Virtual DOM representation of a component with its previous representation to identify the differences and efficiently update the Real DOM
+    -It involves comparing the current Virtual DOM representation of a component with its previous representation to identify the differences and efficiently update the Real DOM.
+Here's a step-by-step overview of the reconciliation process in React:
+    Component Render:
+        • When a component's state or props change, React re-renders the component and its children to generate a new Virtual DOM representation.
+    Diffing Algorithm:
+        • React performs a “diffing” or comparison process between the new Virtual DOM tree and the previous Virtual DOM tree for the component.
+        • It recursively traverses the component tree and compares each node (element) in the new tree with its counterpart in the previous tree.
+Identifying Changes:
+    React identifies three types of changes:
+        • Added Nodes
+        • Removed Nodes
+        • Updated Nodes
+    Applying Changes:
+        • React efficiently applies the identified changes to the Real DOM, updating only the affected parts without re-rendering the entire DOM tree.
+        • This process involves adding, removing, or updating DOM elements and attributes as necessary to reflect the changes in the UI.
+
+By performing this reconciliation process, React ensures that the UI remains in sync with the application state while minimizing unnecessary updates to the Real DOM, leading to better performance and a smoother user experience.
+
+Difference b/w Real DOM and Virtual DOM
+
+    | Real DOM                                           | Virtual DOM                                                          |
+    | -------------------------------------------------- | -------------------------------------------------------------------- |
+    | Represents the actual structure of a web page.     | A lightweight, in-memory representation.                             |
+    | Created by the browser when a page loads.          | Created and maintained by React for each component.                  |
+    | Inefficient for frequent updates.                  | Efficient for frequent updates.                                      |
+    | Updating is slow and resource-intensive.           | Updating is fast and less resource-intensive.                        |
+    | Directly manipulates the browser’s display.        | Indirectly manipulates the browser’s display through reconciliation. |
+    | Requires re-rendering the entire tree for updates. | Requires minimal updates for changes.                                |
+Features of React JS
+    1. JSX
+        JSX (JavaScript XML) is a syntax extension for JavaScript used in react.
+        it allows you to write HTML- like code in your JavaScript components.
+    2. component
+        React JS is all about Component ,react jsd application  is made up of multiple components and each component has its own logic and controls.
+        those component can be reusable.
+    3. one-way data Binding
+        React Js is designed in such a manner that follows Unidirectional data flow or one way data Binding.
+        the benefits of one ways data Binding give you better controls throughout the application.
+    4. virtual DOM
+        A virtual DOm is a copy of original dom,wherever any modification happen in the web application the entire UI is re-rendered in virtual DOM representation.
+        then it checks the defference between dom representation and new dom only it update if it need.
+    5. simplicity
+        React Js uses JSx file which make the application simple and to code as well as understand.
+        we know that react Js is a component based approach which make the code reusable as yours need.
+    6. performance
+        react js is knowto be a great performer
+        this Features makes it muck better then other frameworks out  there today. the representation behind this is that that it manage a virtual DOM.
+why react is used to create ui when we can  create ui HTML and JS?
+HTML
+        UI-> HMTL-> pre defined elements
+        using html creating UI is very easy .
+        to create UI html is providing some html elements and tags.
+    drawbacks
+        we can't resuse the ui
+        time consuming to create ui.
+JavaScript
+        UI-> JavaScript-> predefind function -> dom element->Dom->screen
+        JavaScript we can create UI dynamically.
+        we can re use UI
+    drawbacks
+        creating UI is very complex process.
+        time consuming.
+React js
+        UI-> react-> predefind function -> react element->dom->screen
+
+
+| HTML                    | JavaScript                           | React JS                                        |
+| ----------------------- | ------------------------------------ | ----------------------------------------------- |
+| Creating the UI is easy | We can reuse the UI                  | Creating UI is very easy for large applications |
+| We cannot reuse the UI  | Creating the UI is a complex process | We can reuse the UI like JavaScript             |
