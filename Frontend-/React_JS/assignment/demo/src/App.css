@@ -1,0 +1,24 @@
+h1{
+    color: blue;
+}
+b{
+    color: green;
+}
+button{
+    border: 4px solid rgb(48, 123, 189);
+     background-color: #f01707;
+}
+img{
+    height: 150px;
+    width: 100px;
+    border: 10px solid rgb(2, 1, 0);
+    border-radius: 30%;
+}
+div{
+    background-color: #00ff33;
+}
+button:hover{
+    border: 6px solid rgb(26, 255, 0);
+    background-color: #140bc0;
+    color: white;
+}
