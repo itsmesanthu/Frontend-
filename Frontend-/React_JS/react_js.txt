@@ -338,3 +338,52 @@ Rules of write JSX
 React Fragments
     - React Fragments provide a way to group multiple React elements without adding extra nodes to the DOM.
     - They allow you to return multiple elements from a component's render method without needing to wrap them in a single parent element.
+- They allow you to return multiple elements from a component's render method without needing to wrap them in a single parent element.
+    - JSX attributes use camel case. Html attributes like class and onclick must be written in camel case in jsx
+for example:
+
+                    class becomes className
+
+                    onclick becomes onClick
+
+- Javascript expression in jsx must be enclosed in curly bracket .
+- JSX tags can have multiple children we can nest elements inside jsx tags and they will render as part of tree structure
+- JSX supports comments in React.   ==⇒   {/*                *}
+
+                    MODULE-3
+            (Components in react)
+What are Components?
+    >Components are reusable pieces of UI. Instead of writing everything in one file,
+    >We break the Ul into small, manageable parts.
+    >Components are reusable and they have different properties in each components.
+Why Components?
+                +----------------------------------+
+                |             Header               |
+                +----------------------------------+
+                +-----------+----------------------+
+                |           |                      |
+                |  Sidebar  |    Main Content      |
+                |           |                      |
+                +-----------+----------------------+
+                +----------------------------------+
+                |             Footer               |
+                +----------------------------------+
+Why components?
+    >Reusability
+    >Better Organization
+    >Eady to maintain
+    >Scalability
+Advantage of React Component
+    • Reusability
+        You can write a component once and reuse it wherever needed.
+    • Maintainability
+        Components are isolated — changes in one don't break others.
+    • Separation of Concerns
+        Each component handles its own UI, logic, and style.
+    • Better Performance with Virtual DOM
+        React only re-renders the components that change.
+    • Composition
+        Components can be nested inside others to build complex UIs.
+    • Easy to Debug & Understand
+        Smaller components make code easier to test and maintain.
+Type of components

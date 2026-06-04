@@ -1,5 +1,6 @@
 import React from 'react'
 import Signup from './Signup'
+import Forgot from './Forgot'
 function login() {
     let submit=()=>{
         alert("login susscefully")
@@ -12,7 +13,7 @@ function login() {
       <p>password: <input type="password" placeholder="enter password" /></p>
       <button onClick={submit}>submit</button>
         </form>
-              <p><button>Forgot Password?</button></p>
+              <p><button>Forgot Password? <a href="./Forgot">Forgot</a></button></p>
    <p>Don't have an account? <button> <a href="./Signup">signup</a></button></p>
    
     </div>

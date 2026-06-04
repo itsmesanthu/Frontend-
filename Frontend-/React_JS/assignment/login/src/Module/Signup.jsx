@@ -14,8 +14,7 @@ function Signup() {
         <p>Phone number: <input type="text" placeholder='enter your phone number' /></p>
         <p>password: <input type="password" placeholder="enter a password" /></p>
         <p>comform password: <input type="password" placeholder="Re-enter your password" /></p>
-        <button onClick={submit}>submit</button>
-        <a href="./Login.jsx"> login</a>
+        <button onClick={submit}><a href="./Login.jsx"></a>submit</button>
       </form>
     </div>
   )

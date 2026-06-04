@@ -1,0 +1,26 @@
+.heading{
+    margin: 10px;
+    display: flex;
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+}
+.div1{
+    border: 2px solid black;
+    box-shadow: 20px black;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.h{
+    height: 100px;
+    width: 120px;
+    border: 2px solid darkorange;
+    box-shadow: 0px 0px 10px 5px black;
+    background-color: rgb(229, 184, 184);
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+
+}

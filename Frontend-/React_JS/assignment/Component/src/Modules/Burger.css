@@ -1,0 +1,188 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background: #f66d6d;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.menu-icon {
+  position: absolute;
+  right: 50px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  min-height: 90vh;
+}
+
+.hero-content {
+  flex: 1;
+  background: linear-gradient(
+    to right,
+    #f5efb4,
+    #f9d1d6
+  );
+  padding: 120px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin-bottom: 60px;
+}
+
+.hero-content button {
+  width: 250px;
+  height: 65px;
+  border: none;
+  background: #f66d6d;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gallery Section */
+.gallery-section {
+  min-height: 100vh;
+  background: linear-gradient(
+    to right,
+    #f5efb4,
+    #e5a3ea
+  );
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  padding: 80px;
+}
+
+.gallery {
+  display: flex;
+  gap: 30px;
+}
+
+.left-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-images img {
+  width: 250px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.middle-image img {
+  width: 280px;
+  height: 460px;
+  object-fit: cover;
+}
+
+/* Card */
+.card {
+  background: #f66d6d;
+  padding: 40px;
+  width: 500px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 40px;
+}
+
+.card button {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero,
+  .gallery-section {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    padding: 60px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .gallery {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}

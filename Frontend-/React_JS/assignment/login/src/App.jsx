@@ -5,6 +5,7 @@ import Forgot from './Module/Forgot'
 
 function App() {
   return (
+    <center>
     <div>
       <Login/>
       <br />
@@ -12,8 +13,13 @@ function App() {
       <Signup/>
       <br />
       <hr />
+        <br />
+          <br />
+            <br />
+              <br />
       <Forgot/>
     </div>
+    </center>
   )
 }
 
