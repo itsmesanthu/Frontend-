@@ -82,33 +82,61 @@
 // }
 
 // export default App
-import React from 'react'
-import Greet from './Module/Components/Greet'
-import Greet1 from './Module/Components/Greet1'
-import Heading from './Module/Components/Heading'
-import Nove from './Module/Components/Nove'
-import Sidebar from './Module/Components/Sidebar'
-import Main from './Module/Components/Main'
-import Footer from './Module/Components/Footer'
-import ProfileCards from './Module/Components/ProfileCards'
+// import React from 'react'
+// import Greet from './Module3/Components/Greet'
+// import Greet1 from './Module3/Components/Greet1'
+// import Heading from './Module3/Components/Heading'
+// import Nove from './Module3/Components/Nove'
+// import Sidebar from './Module3/Components/Sidebar'
+// import Main from './Module3/Components/Main'
+// import Footer from './Module3/Components/Footer'
+// import ProfileCards from './Module3/Components/ProfileCards'
 
-function App() {
+// function App() {
+//   return (
+//     <div>
+//       <Heading/>
+//       <Nove/>
+//       <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+//       <Sidebar/> <Main/>
+//       </div>
+//       <Footer/>
+//       <br />
+//       <br />
+//       <ProfileCards/>
+
+
+
+//     </div>
+//   )
+// }
+
+// export default App
+// import React, { Component } from 'react'
+// import Heading from './Module3/class/Head'
+// import Nove from './Module3/Class/Nve'
+// import Sidebar from './Module3/Class/Side'
+// import Main from './Module3/Class/Main'
+// import Footer from './Module3/Class/Foot'
+// // import Parent from './Module3/Props/Parent'
+// import Button from './Module3/Props/Button'
+// import Parent from './Module4/Parent'
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Parent/>
+//       </div>
+//     )
+//   }
+// }
+import React from 'react'
+import Parent from './Module4/Parent'
+
+export default function App() {
   return (
     <div>
-      <Heading/>
-      <Nove/>
-      <div style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
-      <Sidebar/> <Main/>
-      </div>
-      <Footer/>
-      <br />
-      <br />
-      <ProfileCards/>
-
-
-
+      <Parent/>
     </div>
   )
 }
-
-export default App
