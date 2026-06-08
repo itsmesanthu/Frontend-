@@ -386,4 +386,59 @@ Advantage of React Component
         Components can be nested inside others to build complex UIs.
     • Easy to Debug & Understand
         Smaller components make code easier to test and maintain.
-Type of components
+Types of Components?
+    >React components come in two types:
+        1.functional component
+        2.Class components  
+
+Class Component:
+    <>CLass component are ES6 classes that extend the React.Component class.
+    <>They define a render() method to returns JSX, along with additional feature like state management and lifecycle methods.    
+
+Difference Class and Functional Components
+
+------------------------------------------------------------
+| Functional Components     | Class Components             |
+------------------------------------------------------------
+| Functional Component is   | Class component is complex   |
+| easy to create            | to create                    |
+------------------------------------------------------------
+| Functional component are  | Class component little slow  |
+| fast in rendering         | in rendering                 |
+------------------------------------------------------------
+| In functional component   | In class component state     |
+| we can assign any data    | should be assigned with      |
+| type value to the state   | object only                  |
+------------------------------------------------------------
+| Hooks can be used         | Hooks cannot be used in      |
+|                           | class component              |
+------------------------------------------------------------
+
+Props intro:
+    <>props stands for properties
+    <>props are used to pass date from one component to another component in React.
+They make Components:
+    <>reusable
+    <>dynamic
+    <>configurable
+
+MODULE-4
+---------
+What are props?
+
+    • Props stand for "Properties." They are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes.
+    • Props are immutable so we cannot modify the props from inside the component.
+    • Functional components receive props as parameters
+    • Props play a crucial role in creating dynamic and reusable components by allowing them to be configured with different data based on their usage within the application.
+
+How Props Work?
+    Parent component sends data as props.
+    Child component receives props as an argument.
+    We use props.name, props.age to access the data.
+    Pro tip: use meaningful prop names it makes your code
+    easier to read and understand.
+Prop Destructuring:
+    <>prop destructuring in React functional components is a common patterns that allows you to extract values directly from the props object,marking your code cleaner and easier to read.
+
+Default Props:
+    <>It is necessary to always add props in the reactDom.render() element. you can also set default props directly.
