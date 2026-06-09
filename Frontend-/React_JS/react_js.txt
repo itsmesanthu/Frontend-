@@ -442,3 +442,31 @@ Prop Destructuring:
 
 Default Props:
     <>It is necessary to always add props in the reactDom.render() element. you can also set default props directly.
+react state 
+    > state is used to store and manage data inside a component.
+    > when state change the UI update automatically.
+why state?
+    > make component interactive
+    > UI updates based on data Changes
+    > handles dynamic data(forms,counter  ,taggles,etc)
+    >improves user experience.
+
+useState() Hook
+    •⁠  ⁠The useState hook is a built-in React hook that allows functional components to manage stateful data without using class components.
+    •⁠  ⁠It returns a pair of values: the current state and a function to update that state. useState enables functional components to have their own state, making them more powerful and flexible.
+
+Syntax:
+    const [state, setState] useState(value for variable)
+
+What is useState() ?
+    •⁠  ⁠useState() is simple predefined javascript function which is coming from react library.
+    •⁠  ⁠useState will return one array which contains exactly two elements ie: state, setState.
+    •⁠  ⁠First element is a state variable and second element is a function(setter function).
+What is State?
+    - State is a special variable in react where we can store any type of data.
+    Example:
+        let[state,setState]=useState(o)
+        let[state.setState]=useState("Virat")
+        let[state.setState]=useState((name:"raj",age:27])
+        let[state.setState]=useState(true)
+        let[state.setState]=useState([10,20,30,50])

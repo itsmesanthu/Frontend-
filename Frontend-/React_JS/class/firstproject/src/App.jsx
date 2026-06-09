@@ -154,16 +154,42 @@
 //     </div>
 //   )
 // }
-import React from 'react'
-import Child from './Module4/Child'
 
+
+// import React from 'react'
+// import Child from './Module4/Child'
+
+// function App() {
+//     let hclick=()=>{
+//         alert('profile updated soon')}
+//   return (
+//     <div>
+//       <Child sub='math'name='santhu'click={hclick}/>
+//       <Child name='santhu'click={hclick}/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+import React from 'react'
+import Ex4 from './Module4/Ex4'
+import Ex5 from './Module4/Ex5'
+import Ex6 from './Module4/Ex6'
+import Ex7 from './Module4/Ex7'
+import ProductCard from './Module4/ProductCard'
+import Card from './Module4/Card'
+import Form from './Module4/Form'
+import Pass from './Module4/Pass'
 function App() {
-    let hclick=()=>{
-        alert('profile updated soon')}
   return (
     <div>
-      <Child sub='math'name='santhu'click={hclick}/>
-      <Child name='santhu'click={hclick}/>
+<ProductCard/>
+<Card/>
+<Form/>
+<Pass/>
+
     </div>
   )
 }
