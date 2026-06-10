@@ -1,0 +1,26 @@
+header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #e5e6ea;
+            color: rgb(5, 2, 2);
+            padding: 15px 40px;
+        }
+
+        .hi{
+            height: 50px;
+            border: 5px solid black;
+            border-radius: 50px;
+            background-color: white;
+        }
+
+        nav a{
+            color: rgb(12, 4, 4);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: orange;
+        }

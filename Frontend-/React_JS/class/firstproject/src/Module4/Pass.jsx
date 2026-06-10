@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Child from "./Child";
+import Child from "./Child1";
 
 function Pass() {
   const [message, setMessage] = useState(

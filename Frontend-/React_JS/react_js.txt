@@ -467,6 +467,31 @@ What is State?
     Example:
         let[state,setState]=useState(o)
         let[state.setState]=useState("Virat")
-        let[state.setState]=useState((name:"raj",age:27])
+        let[state.setState]=useState([ name:"raj",age:27])
         let[state.setState]=useState(true)
         let[state.setState]=useState([10,20,30,50])
+React Icons:
+    <>To add icons in the react application we need install react icons library.
+    <>To get react icons we need to visit for website called react icons. Then we need to copy the react icons library command and we need to install in react application.
+The command is:
+    npm install react-icons -save
+
+Module-5:
+---------
+
+Event Handling:
+    <>In React, handling events is very similar to handling event in regular JavaScript.
+    <>Event handling allows us to respond to user actions like clicks, input and form submissions
+    <>However, there are same syntactic differences and conventions that are important to understand.
+
+Why Event Handling?
+    <>makes the app interactive
+    <>REsponds to user action.
+    <>Updates states and ui
+    <>Brings your app to life.
+
+How it works?
+    1.User perform an action (click or type)
+    2.Event is triggered (onClick, onChange etc)
+    3.Function runs and updates the state
+    4.Ul re-renders and shows updated data
