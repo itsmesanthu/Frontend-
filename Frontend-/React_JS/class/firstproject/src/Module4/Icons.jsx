@@ -37,7 +37,7 @@ const[count,setCount]=useState(0)
       <div>
       <button onClick={()=>handleClik('rar')}>click</button>
       </div>
-      <div>
+      <div style={{display:'flex',justifyContent:'center',dfd }}>
         <form >
         <label >Username:</label><input type="text" name='uername' />
         <label> password:</label><input type="password" name='password' />

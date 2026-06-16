@@ -1,0 +1,54 @@
+.up-container{
+  max-width:480px;
+  margin:36px auto;
+  padding:20px 24px;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 8px 24px rgba(12,20,30,0.06);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:flex-start;
+}
+
+.up-title{
+  margin:0;
+  font-size:1.25rem;
+  color:#0f172a;
+}
+
+.up-name{
+  margin:0;
+  color:#334155;
+  font-size:1rem;
+}
+
+.up-status{
+  margin:0;
+  font-weight:600;
+  color:#0f172a;
+}
+
+.up-badge{
+  display:inline-block;
+  margin-left:8px;
+}
+
+.up-button{
+  margin-top:8px;
+  background:#10b981;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.up-button.offline{
+  background:#ef4444;
+}
+
+@media (max-width:520px){
+  .up-container{padding:16px; margin:18px;}
+}

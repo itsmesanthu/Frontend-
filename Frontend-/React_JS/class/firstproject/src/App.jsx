@@ -195,14 +195,52 @@
 // }
 
 // export default App
+// import React from 'react'
+// import Icons from './Module4/Icons'
+// import Loginfrom from './Modul5/Loginfrom'
+// function App() {
+//   return (
+//     <div>
+//    <Loginfrom/>
+//     </div>
+//   )
+// }
+
+// export default App
+//  //// module 6
+// import React from 'react'
+// import Ex1 from './Module6/Ex1'
+// import Ex2 from './Module6/Ex2'
+// import Ex3 from './Module6/Ex3'
+// import Show from './Module6/Show'
+// import LL from './Module6/LL'
+// function App() {
+//   return (
+//     <div>
+//       <Ex1 condtion={false}/>
+
+//       <Ex2 condtion={true}/>
+//       <br />
+//       <Ex3 condtion={true}/>
+//       <br />
+//       <Show/>
+//       <LL/>
+
+//     </div>
+//   )
+// }
+
+// export default App
+                          //// module 7
 import React from 'react'
-import Icons from './Module4/Icons'
+import List from './Module7/List'
 function App() {
   return (
     <div>
-      <Icons/>
+      <List/>
     </div>
   )
 }
 
 export default App
+
