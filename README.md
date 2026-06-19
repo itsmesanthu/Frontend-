@@ -1,27 +1,39 @@
-Frontend Project
+# 📚 Learning & Practice Repository
 
-📌 Project Title
-Frontend Practice Project – Dhee Coding Lab
+Welcome to my Learning & Practice Repository!
 
-📖 Description
-This project is a collection of frontend development tasks and exercises completed during training at Dhee Coding Lab.  
-The main objective of this project is to learn and practice web development using HTML, CSS, and JavaScript.
+This repository is created to document my learning journey in software development. Here, I regularly practice coding concepts, build small projects, solve problems, and explore new technologies.
 
-It demonstrates the ability to create basic web pages, design layouts, and implement interactive features using frontend technologies.
+## 🎯 Purpose
 
- 🎯 Objectives
-- To understand the basics of frontend development
-- To practice HTML, CSS, and JavaScript
-- To build responsive web pages
-- To improve coding and design skills
-- To learn GitHub for project management
+The main goal of this repository is to:
 
- 🛠 Technologies Used
+- Learn new programming concepts
+- Practice coding regularly
+- Improve problem-solving skills
+- Build consistency in learning
+- Track my progress over time
+- Maintain notes and examples for future reference
+
+## 📖 What You'll Find Here
+
+This repository may include:
+
+
+### Web Development
 - HTML
 - CSS
 - JavaScript
-- Git
-- GitHub
-- VS Code
+- Responsive Design
 
-📂 Project Structure
+### React
+- Components
+- Props
+- State Management
+- Event Handling
+- Hooks
+- Mini Projects
+
+## 💡 Note
+
+This repository is intended for learning and practice purposes only. Code quality, structure, and solutions may improve over time as I continue learning and gaining experience.
