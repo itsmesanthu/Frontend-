@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="100%" height="100%" fill="#fff7fb" />
+  <circle cx="120" cy="150" r="50" stroke="#d38fb3" stroke-width="14" fill="none" />
+  <circle cx="260" cy="150" r="40" stroke="#f1cbe0" stroke-width="10" fill="none" />
+  <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" font-size="18" fill="#8b4a5a" font-family="Arial">Rings</text>
+</svg>
