@@ -193,8 +193,8 @@
 //     </div>
 //   )
 // }
-
-// export default App
+////module 5
+// // export default App
 // import React from 'react'
 // import Icons from './Module4/Icons'
 // import Loginfrom from './Modul5/Loginfrom'
@@ -230,17 +230,28 @@
 //   )
 // }
 
+// // export default App
+//                           //// module 7
+// import React from 'react'
+// import List from './Module7/List'
+// function App() {
+//   return (
+//     <div>
+//       <List/>
+//     </div>
+//   )
+// }
+
 // export default App
-                          //// module 7
+
 import React from 'react'
-import List from './Module7/List'
+import EnhancedComponent from './Module7.1/EnhancedComponent'
 function App() {
   return (
     <div>
-      <List/>
+      <EnhancedComponent/>
     </div>
   )
 }
 
 export default App
-
