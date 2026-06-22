@@ -243,13 +243,34 @@
 // }
 
 // export default App
+///// module 7
+// import React from 'react'
+// import EnhancedComponent from './Module7.1/EnhancedComponent'
+// function App() {
+//   return (
+//     <div>
+//       <EnhancedComponent/>
+//     </div>
+//   )
+// }
 
+// export default App
+//// module 8
 import React from 'react'
-import EnhancedComponent from './Module7.1/EnhancedComponent'
+import Exa1 from './Module8/Exa1'
+import Exa2 from './Module8/Exa2'
+import Eax3 from './Module8/Eax3'
+import Eax4 from './Module8/Eax5'
+import Eax5 from './Module8/Eax5'
+
 function App() {
   return (
     <div>
-      <EnhancedComponent/>
+      <Exa1/>
+      <Exa2/>
+      <Eax3/>
+      <Eax4/>
+      <Eax5/>
     </div>
   )
 }
