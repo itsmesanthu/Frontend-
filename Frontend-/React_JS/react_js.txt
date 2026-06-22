@@ -422,8 +422,8 @@ They make Components:
     <>dynamic
     <>configurable
 
-MODULE-4
----------
+            MODULE-4
+            ---------
 What are props?
 
     • Props stand for "Properties." They are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes.
@@ -476,22 +476,172 @@ React Icons:
 The command is:
     npm install react-icons -save
 
-Module-5:
----------
-
-Event Handling:
-    <>In React, handling events is very similar to handling event in regular JavaScript.
-    <>Event handling allows us to respond to user actions like clicks, input and form submissions
-    <>However, there are same syntactic differences and conventions that are important to understand.
+            Module 5:
+        -----------------=
+Event Handling
+    - In React, handling events is very similar to handling event in regular JavaScript.
+    - Event handling allows us to respond to user actions like clicks, input and form submissions
+    - However, there are same syntactic differences and conventions that are important to understand.
 
 Why Event Handling?
-    <>makes the app interactive
-    <>REsponds to user action.
-    <>Updates states and ui
-    <>Brings your app to life.
+    - Makes the app interactive.
+    - Responds to user actions.
+    - Updates state and UI.
+    - Brings your app to life.
 
 How it works?
     1.User perform an action (click or type)
     2.Event is triggered (onClick, onChange etc)
-    3.Function runs and updates the state
-    4.Ul re-renders and shows updated data
+    3.Function runs and updates the state.
+    4.Ul re-renders and shows updated data.
+
+Event Binding Example
+    - In React, events are written in camel Case, and you pass a function as the event handler.Module
+
+                        Module 6
+                        -----------
+Conditional Rendering
+    - Conditional rendering allows components to display UI based on conditions or state value.
+    - This allows you to dynamically control what content is displayed to the user based on the state of your application.
+    - This can be done using several methods, such as JavaScript's conditional operators (if-else, ternary operator) or logical operators like &&r and ||.
+
+                    Module 7
+                   ----------
+Lists in React
+    - In React JS, lists play a crucial role in rendering dynamic collections of elements, such as arrays of data.
+    - Rather than manually creating each element, lists enable developers to map over an array of data and dynamically generate React elements based on the data.
+    - This allows for efficient rendering of repetitive elements and supports dynamic data-driven Uls
+
+Why Keys are Important
+    - Keys play a vital role in optimizing the rendering and updating of lists in React.
+    - Without keys, React may re-render the entire list every time there's a change, leading to poor performance and unnecessary DOM manipulations.
+    - By providing keys, React can efficiently identify which elements have changed, been added, or been removed from the list, resulting in faster rendering and a smoother user experience.
+
+React component life-cycle
+    - Lifecycle refers to the different phases of a component goes through from mounting to unmounting.
+    - Every react component has a lifecycle
+    - It goes through 3 main phases mounting, updating, unmounting.
+    - React provides lifecycles methods (hooks in functional components) that allow us to run code at specific stages.
+
+//example life cycle order 1. constructor 2. render 3. componentDldMount 4. render (in update) 5. componentDldUpdate 6. componentWillUnmount
+class Examples extends React.Component{
+constructor(props){
+this.state={count:0};
+console.log('constructor');
+
+```
+}
+componentDidMount(){
+    console.log('componentDidMount');
+}
+componentDidUpdate(prevProps, prevState){
+    console.log('componentDidUpdate');
+}
+componentWillUnmount(){
+    console.log('componentWillUnmount');
+}
+render(){
+    console.log('render');
+    return <h3>Count:{this.state.count}</h3>;
+}
+}
+```
+
+Interview Questions (React Lifecycle)
+What is React Lifecycle?
+What are the Lifecycle phases in React?
+What happens during the mounting phase?
+What is the purpose of componentDidMount()?
+What happens during the updating phase?
+What is componentDidUpdate()?
+What is componentWillUnmount()?
+How can we avoid an infinite loop in componentDidUpdate()?
+What are the lifecycle methods in functional components?
+What is the order of lifecycle methods in class components?
+
+            ```jsx
+            import React from 'react'
+
+            //HOC-->High Order Component
+            function withAuthentication(WrappedComponent){
+                const isLoggedIn=false
+                return(props)=>{
+                    if(isLoggedIn){
+                        return <WrappedComponent {...props} isLoggedIn={isLoggedIn}/>
+                    }
+                    else{
+                        return <p>Please login to view content</p>
+                    }
+                }
+            }
+
+            //Normal Component
+            function AuthenticatedComponent({isLoggedIn}){
+                return(
+                    <div>
+                        {isLoggedIn?<p>Authenticated Content</p>
+                        :
+                        <p>Not Authenticated Content</p>}
+                    </div>
+                )
+            }
+
+            let EnhancedComponent=withAuthentication(AuthenticatedComponent)
+            export default EnhancedComponent;
+            ```
+
+Benefits of HOC
+    - Reusability: HOCs promote code reuse by encapsulating common functionality and applying it to multiple components throughout the application.
+    - Separation of concerns: HOCs allow developers to separate concerns by abstracting complex logic or side effects from the presentation layer, making components simpler and easier to maintain.
+    - Composition: HOCs support composition, enabling developers to combine multiple HOCs to create more complex behaviors or apply different layers of functionality to component
+
+                        Module 8
+                        ----------
+Frontend Application =⇒ (UI, Data management, Networking, Routing)
+React JS library + HOOKS library( Axions /Fetch) ——> TanStack Query
+
+        1. UseState
+        2. UseEffect
+        3. UseRef
+        4. UseCallback
+        5. Usememo
+        6. UseReducer
+        7. Context API
+        8. Useparam
+        9. UseNavigate
+        10. 
+
+React Hooks
+    - Hooks were added to React in version 16.8.
+    - Hooks allow function components to have access to state and other React features.
+
+Purpose:
+    - The primary purpose of hooks is to enable functional components to have the same capabilities as class components without the need for complex class syntax or lifecycle methods.
+
+React Hook Rules
+    - Hooks can only be called inside React function components.
+    - Hooks can only be called at the top level of a component.
+    - Hooks cannot be conditional.
+    - Don't call hooks inside loops, condition, or nested functions
+
+    In React Hooks we can different types of hooks to deal with in functional component
+
+useState() Hook:
+        <>The useState hook is a built-in React hook that allows functional components to manage stateful data without using class components.
+        <>it returns a pair of values: the current state and a function to update that state. useState enables functional components to have their own state, making them more powerful and flexible.
+    Syntax:
+        const [ state, setState]= useState(value for variable)
+
+What is useState()?
+    <>useState() is simple predefined javascript function which is coming from react library.
+    <>useState will return one array which contains exactly two elements ie state, setState
+    <>First element is a state variable and second element is a function(setter function)
+
+What is State ?
+    •State is a special variable in react where we can store any type of data.
+Example:
+    let[state.setState]-useState(o) 
+    let[state.setState]=useState("Virat") 
+    let[state.setState]=useState((name:"raj",age:27)) 
+    let[state.setState]=useState(true) 
+    let[state.setState]-useState ([10,20,30,50])
