@@ -25,15 +25,32 @@ function Eax5() {
       <h2>Example for for api fetching using useEffect hook</h2>
       {error&&(<p>data loading...</p>)}
       {!error && data && (
-        <ol>
-          {data.map((ele) => (
-            <li key={ele.id}>
-              <h3>id: {ele.id}</h3>
-              <h3>title: {ele.title}</h3>
-              <p>description: {ele.description}</p>
-            </li>
-          ))}
-        </ol>
+    <table border={2}>
+        <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>description</th>
+            <th>category</th>
+            <th>image</th>
+            <th>rate</th>
+            <th>count</th>
+        </tr>
+        {data.map((ele)=>{
+            return(
+                <tr key={ele.id}>
+            <th>{ele.id}</th>
+            <th>{ele.title.substring(0,20)}</th>
+            <th>{ele.price}</th>
+            <th>{ele.description}</th>
+            <th>{ele.category}</th>
+            <th><img src={ele.img}alt="no image" height={100} width={100} /></th>
+            <th>{ele.rating.rate}</th>
+            <th>{ele.rating.count}</th>
+                </tr>
+            )
+        })}
+    </table>
       )}
 
     </div>

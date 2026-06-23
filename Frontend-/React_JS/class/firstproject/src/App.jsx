@@ -260,8 +260,12 @@ import React from 'react'
 import Exa1 from './Module8/Exa1'
 import Exa2 from './Module8/Exa2'
 import Eax3 from './Module8/Eax3'
-import Eax4 from './Module8/Eax5'
+import Exa4 from './Module8/Exa4'
 import Eax5 from './Module8/Eax5'
+import Table from './Module8/Table'
+import Clock from './Module8.1/Clock'
+import StopWatch from './Module8.1/StopWatch'
+import Calculator from './Module8.1/Calculator'
 
 function App() {
   return (
@@ -269,8 +273,12 @@ function App() {
       <Exa1/>
       <Exa2/>
       <Eax3/>
-      <Eax4/>
+      <Exa4/>
       <Eax5/>
+      <Table/>
+      <Clock/>
+      <StopWatch/>
+      <Calculator/>
     </div>
   )
 }

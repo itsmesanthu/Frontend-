@@ -640,8 +640,45 @@ What is useState()?
 What is State ?
     •State is a special variable in react where we can store any type of data.
 Example:
-    let[state.setState]-useState(o) 
+    let[state.setState]=useState(o) 
     let[state.setState]=useState("Virat") 
     let[state.setState]=useState((name:"raj",age:27)) 
     let[state.setState]=useState(true) 
-    let[state.setState]-useState ([10,20,30,50])
+    let[state.setState]=useState ([10,20,30,50])
+(imp)
+useEffect() hook:
+    <>The useEffect hook in React is a powerful tool for handling side effects in functional component.
+    <>Side effects may include data fetching, DOM manipulation, subscription, or any other asynchronous tasks that need to be executed after rendering.
+    <>useEffect replace lifecycle methods such as
+    componentDidMount(empty dep), componentDidUpdate(with dep), and componentWillUmmount(cleanup function)in class components.
+
+Why do we need it?
+    • Fetching data
+        fetch data from API's when component mounts or when dependencies change 
+    • Subscriptions
+        subscribe to events, sockets, or external stores and clean up on unmount.
+    <>Timers
+        set timeouts/intervals and clear them to avoid memory leaks.
+    • DOM Manipulation
+        Interact with DOM API's (focus, scroll, measurements, etc)
+    <>Local storage/Session storage
+        sync state with browser storage
+
+Syntax:
+    useEffect (setup, dependencies?):
+        <>Effect function → runs after render
+        <>Cleanup function → runs before effect re-runs or component unmounts
+        <>Dependency array→ controls when the effect runs
+        <>If omitted → runs after every render 
+    Syntax:
+        useEffect(()=>{
+            //side effect code here
+            return () =>{
+                //cleanup code here (optional)
+            },
+        },{dependencies});
+Benefits:
+    ➡ Simplify Side Effects: useEffect makes it easy to perform tasks like fetching data or updating the DOM after a component renders.
+    ➡ Replace Lifecycle Methods: It replaces class-based lifecycle methods, making component logic easier to understand and manage.
+    ➡ Prevent Memory Leaks: Cleanup functions in useEffect help prevent memory leaks by cleaning up resources when the component unmounts.
+This slide is explaining the Benefits of React's useEffect Hook.
