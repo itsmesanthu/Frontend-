@@ -99,16 +99,19 @@ import React from 'react'
 import UserProfile from './Modul6/UserProfile'
 import LoginApp from './Modul6/LoginApp'
 import TableList from './Modul6/TableList'
+import Calculator from './Module8/Calculator'
 function App() {
   return (
     <div >
-      <div>
+      {/* <div>
       <UserProfile/>
       </div>
       <div>
       <LoginApp/>
       </div>
-      <TableList/>
+      <TableList/> */
+      }
+      <Calculator/>
     </div>
   )
 }

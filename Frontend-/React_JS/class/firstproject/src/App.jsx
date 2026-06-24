@@ -255,30 +255,46 @@
 // }
 
 // export default App
-//// module 8
+// //// module 8
+// import React from 'react'
+// import Exa1 from './Module8/Exa1'
+// import Exa2 from './Module8/Exa2'
+// import Eax3 from './Module8/Eax3'
+// import Exa4 from './Module8/Exa4'
+// import Eax5 from './Module8/Eax5'
+// import Table from './Module8/Table'
+// import Clock from './Module8.1/Clock'
+// import StopWatch from './Module8.1/StopWatch'
+// import Calculator from './Module8.1/Calculator'
+// import User from './Module8.2/User'
+
+// function App() {
+//   return (
+//     <div>
+//       <Exa1/>
+//       <Exa2/>
+//       <Eax3/>
+//       <Exa4/>
+//       <Eax5/>
+//       <Table/>
+//       <Clock/>
+//       <StopWatch/>
+//       <Calculator/>
+//       <User/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+//// module 9
 import React from 'react'
-import Exa1 from './Module8/Exa1'
-import Exa2 from './Module8/Exa2'
-import Eax3 from './Module8/Eax3'
-import Exa4 from './Module8/Exa4'
-import Eax5 from './Module8/Eax5'
-import Table from './Module8/Table'
-import Clock from './Module8.1/Clock'
-import StopWatch from './Module8.1/StopWatch'
-import Calculator from './Module8.1/Calculator'
+import Ex1 from './Module9/Ex1'
 
 function App() {
   return (
     <div>
-      <Exa1/>
-      <Exa2/>
-      <Eax3/>
-      <Exa4/>
-      <Eax5/>
-      <Table/>
-      <Clock/>
-      <StopWatch/>
-      <Calculator/>
+      <Ex1/>
     </div>
   )
 }

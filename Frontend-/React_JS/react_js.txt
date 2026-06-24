@@ -682,3 +682,22 @@ Benefits:
     ➡ Replace Lifecycle Methods: It replaces class-based lifecycle methods, making component logic easier to understand and manage.
     ➡ Prevent Memory Leaks: Cleanup functions in useEffect help prevent memory leaks by cleaning up resources when the component unmounts.
 This slide is explaining the Benefits of React's useEffect Hook.
+        
+      module 9
+    useRef() Hook
+useRef() Hook:
+    <>The useRef Hook you to persist values between renders, means ability to store a value within a component that remains unchanged even when the component re-renders.
+    <>useRef is a react hook that returns a mutable ref object with a current property.
+    <>it helps you store a value (or reference) that doesn't trigger re-render in changes.
+
+syntax:
+    <>return an object: {current: initial value}
+    <>The object reference remains the same across all render
+        const refContainer=useRef(initialValues);
+
+Key Points to remember:
+    <>useRef() does not trigger re-reder which current changes.
+    <>The ref objects is mutable (you can change ref.current)
+    <>Ref object is stable across render (same reference)
+    <>useRef is similar to an instance variable in class component.
+    <>Best for DOM access, storing values,times,previous values etc.
