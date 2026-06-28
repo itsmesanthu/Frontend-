@@ -701,3 +701,32 @@ Key Points to remember:
     <>Ref object is stable across render (same reference)
     <>useRef is similar to an instance variable in class component.
     <>Best for DOM access, storing values,times,previous values etc.
+HOW it works:
+    <>on first render, useRef (initialValue) create an object {current:initialValue}
+    <>on re-render, React return the same object
+    <>That object lives for the full component life cycle.
+                First Render
+                    |
+                    v
+            +------------------+
+            | { current: 0 }   |
+            | (ref object)     |
+            +------------------+
+                    |
+                    v
+                Re-Render 1
+            +------------------+
+            | { current: 5 }   |
+            | (same object)    |
+            +------------------+
+                    |
+                    v
+                Re-Render 2
+            +------------------+
+            | { current: 10 }  |
+            | (same object)    |
+            +------------------+
+
+            Only .current changes,
+            the ref object remains the same.
+Store mutable Valuew
