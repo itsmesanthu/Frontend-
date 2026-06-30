@@ -293,13 +293,17 @@ import Ex1 from './Module9/Ex1'
 import Ex2 from './Module9/Ex2'
 import Component1 from './Module9/Component/Component1'
 import Componentc1 from './Module9/Context/Component1'
+import Navbar from './Module9.1/Componet/Navbar'
+import Prod from './Module9.1/Componet/Prod'
 function App() {
   return (
     <div>
-      <Ex1/>
+      {/* <Ex1/> */}
       {/* <Ex2/> */}
       {/* <Component1/> */}
-      <Componentc1/>
+      {/* <Componentc1/> */}
+      <Navbar/>
+      <Prod/>
     </div>
   )
 }
