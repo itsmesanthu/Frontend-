@@ -730,3 +730,5 @@ HOW it works:
             Only .current changes,
             the ref object remains the same.
 Store mutable Valuew
+Context() hook
+    > context API allows dat

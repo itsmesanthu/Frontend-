@@ -295,6 +295,7 @@ import Component1 from './Module9/Component/Component1'
 import Componentc1 from './Module9/Context/Component1'
 import Navbar from './Module9.1/Componet/Navbar'
 import Prod from './Module9.1/Componet/Prod'
+import ThemeContext from './Module9.1/Componet/ThemeContext'
 function App() {
   return (
     <div>
@@ -302,8 +303,10 @@ function App() {
       {/* <Ex2/> */}
       {/* <Component1/> */}
       {/* <Componentc1/> */}
+      <ThemeContext>
       <Navbar/>
       <Prod/>
+      </ThemeContext>
     </div>
   )
 }

@@ -1,13 +1,16 @@
 import React from 'react'
+import { MdBorderColor } from 'react-icons/md'
 
-function Card({id,title,price,description,category}) {
+function Card({id,title,image,price,description,category}) {
   return (
     <div style={styles.card}>
         <p>id: <b>{id}</b></p>
         <p>title: <b>{title}</b></p>
+        <p><img src={image} alt="" height="300px" width="200px"/></p>
         <p>price: <b>{price}</b></p>
         <p>description: {description}</p>
         <p>category: {category}</p>
+        <button style={styles.button}>Add to cart</button>
 
     </div>
   )
@@ -29,7 +32,15 @@ const styles={
         borderRadius:"50%",
         marginBottom:"15px",
         float:"left"
-    }
+    },
+    button:{
+        height:"30px",
+        backgroundColor:"blue",
+        color:"white",
+        borderRadius:"20px"
+    },
+    
 }
 
 export default Card
+

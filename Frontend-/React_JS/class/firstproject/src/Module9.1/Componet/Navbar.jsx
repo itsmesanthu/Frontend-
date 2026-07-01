@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { contextTheme } from "./ThemeContext";
 
 function Navbar() {
+const { isDarkMode, toogleTheme } = useContext(contextTheme);
   return (
     <div
       style={{
+        background:isDarkMode?"#222":"#fff",
+        color:isDarkMode ? "#fff" : "#222",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
@@ -11,40 +15,42 @@ function Navbar() {
         border: "2px inset yellow",
       }}
     >
-      {/* Logo */}
       <div>
         <h2>Logo</h2>
       </div>
-
-      {/* Navigation Links */}
       <div
         style={{
           display: "flex",
           gap: "20px",
-          color:'black'
+          color:isDarkMode ? "#fff" : "#222",
+
         }}
       >
-        <a href="#" style={{textDecoration:'none'}}>Home</a>
-        <a href="#" style={{textDecoration:'none'}}>Dashboard</a>
-        <a href="#" style={{textDecoration:'none'}}>Contact Us</a>
-        <a href="#" style={{textDecoration:'none'}}>Items</a>
+        <a href="#" style={{textDecoration:'none', color:isDarkMode ? "#fff" : "#222",
+}}>Home</a>
+        <a href="#" style={{textDecoration:'none', color:isDarkMode ? "#fff" : "#222",
+}}>Dashboard</a>
+        <a href="#" style={{textDecoration:'none', color:isDarkMode ? "#fff" : "#222",
+}}>Contact Us</a>
+        <a href="#" style={{textDecoration:'none', color:isDarkMode ? "#fff" : "#222",
+}}>Items</a>
       </div>
 
-      {/* Button */}
       <div>
-        <button
-          style={{
-            height: "45px",
-            width: "100px",
-            border: "2px solid black",
-            borderRadius: "25px",
-            backgroundColor: "black",
-            color: "white",
-            cursor: "pointer",
-          }}
-        >
-          Dark 🌙
-        </button>
+       <button
+  onClick={toogleTheme}
+  style={{
+    height: "45px",
+    width: "100px",
+    border: "2px solid black",
+    borderRadius: "25px",
+    backgroundColor: isDarkMode ? "#fff" : "#222",
+    color: isDarkMode ? "#222" : "#fff",
+    cursor: "pointer",
+  }}
+>
+  {isDarkMode ? "Light ☀️" : "Dark 🌙"}
+</button>
       </div>
     </div>
   );
